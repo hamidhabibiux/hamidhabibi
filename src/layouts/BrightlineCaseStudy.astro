@@ -445,14 +445,21 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url
 
 <script is:inline>
     //this script makes all the videos play on load
-    const allVideos = document.querySelectorAll('.fullSizeVideo')
-    allVideos.forEach(item => {
-        item.play();
-    })
-    allVideos.forEach(item =>{
-        item.addEventListener('astro-page-load', () =>{
+    // const allVideos = document.querySelectorAll('.fullSizeVideo')
+    // allVideos.forEach(item => {
+    //     item.play();
+    // })
+    // allVideos.forEach(item =>{
+    //     item.addEventListener('astro-page-load', () =>{
+    //         item.load();
+    //         item.play();
+    //     });
+    // });
+    document.addEventListener('astro:page-load', () =>{
+        const allVideos = document.querySelectorAll('.fullSizeVideo');
+        allVideos.forEach(item =>{
             item.load();
             item.play();
-        });
-    });
+        })
+    })
 </script>
