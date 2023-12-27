@@ -35,10 +35,6 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url
 /****************END OF IMAGE IMPORTS */
 ---
 
-<head>
-    <link rel="preload" href={assignpreviewVID} as="video" type="video/mp4">
-</head>
-
 
 <div class="hero-image"> 
     <img src={digitalcontentgif.src} width={digitalcontentgif.width*.5} height={digitalcontentgif.height*.5} style="max-width: 100%; width:60%; height: auto;"/>
@@ -433,10 +429,10 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url
 </section>
 </div>
 
-<!-- <script>
+<script>
     //this script makes all the videos play on load
     const allVideos = document.querySelectorAll('#theVideo')
     allVideos.forEach(item => {
         item.play();
     })
-</script> -->
+</script>
