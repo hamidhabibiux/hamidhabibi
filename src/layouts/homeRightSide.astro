@@ -1,0 +1,155 @@
+---
+import rockimage from '../assets/homeimages/Assign and Preview in Mockup.gif';
+import redimage from '../assets/homeimages/Final Prospecting.gif';
+import akira from '../assets/homeimages/image 80.png';
+import blueimage from '../assets/homeimages/PreBrowsing Form.gif';
+import kayimage from '../assets/homeimages/image 78.png';
+import error404img from '../assets/homeimages/error404.png';
+import error404imgborder from '../assets/homeimages/error404border.png';
+
+---
+
+<style>
+
+.rightfull-container{
+    padding: 3vh;
+}
+
+.colorSquare-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5px;
+}
+
+.colorSquare-container p{
+    font-size: 12px;
+}
+.twoColumnContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+}
+.colorSquresColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.fullSizeImage{
+    max-width: 100%;
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
+}
+
+
+
+.colorSquare{
+width: 100px;
+height: 100px;
+background-color: black;
+}
+
+.bigImageContainer{
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+
+#brightlineSquare{
+    background-color: #E2D3C8;
+}
+
+#msSquare{
+background-color: #D8DEE4;
+}
+
+#HandshakeSquare{
+    background-color: #D8E4D8;
+
+}
+
+#ytSquare{
+    background-color: #E2C8C8;
+
+}
+
+#spotifySquare{
+    background-color: #C8E2D9;
+    
+
+}
+
+#msImage{
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+    padding: 2vw 8vw;
+    background-color: #90CAFF;
+
+}
+
+#ytImage{
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+    padding: 2vw 8vw;
+    background-color: #FF8F8F;
+}
+
+.deselectedSquare{
+    opacity: 30%;
+}
+
+.deselectedText{
+    color: #C0B5AF;
+}
+
+.containerImg{display: none;}
+
+.imgLookAtMe{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+</style>
+
+<div class="rightfull-container">
+<div class="twoColumnContainer">
+    <div class="colorSquresColumn">
+        <a href="/brightline"><div id="brightlineSquare-container" class="colorSquare-container">
+            <p>Brightline</p>
+            <div id="brightlineSquare" class="colorSquare"></div>
+        </div></a>
+        <a href="/microsoft"><div id="MicrsoftSquare-container" class="colorSquare-container">
+            <p>Microsoft</p>
+            <div id="msSquare" class="colorSquare"></div>
+        </div></a>
+        <div id="HandshakeSquare-container" class="colorSquare-container">
+            <p>Handshake</p>
+            <div id="HandshakeSquare" class="colorSquare"></div>
+        </div>
+        <a href="/youtube"><div id="YTShortsSquare-container" class="colorSquare-container">
+            <p>YouTube Shorts</p>
+            <div id="ytSquare" class="colorSquare"></div>
+        </div></a>
+        <div id="spotifySquare-container" class="colorSquare-container">
+            <p>Spotify</p>
+            <div id="spotifySquare" class="colorSquare"></div>
+        </div>
+    </div>
+    <div class="bigImageContainer">
+        <img class= 'containerImg fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
+        <img id="msImage" class= 'containerImg fullSizeImage' src={redimage.src} width={redimage.width} height={redimage.height}>
+        <img class= 'containerImg fullSizeImage' src={error404img.src} width={error404img.width} height={error404img.height}>
+        <img id="ytImage" class= 'containerImg fullSizeImage' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
+        <img class= 'containerImg fullSizeImage' src={error404img.src} width={error404img.width} height={error404img.height}>
+
+    </div>
+</div>
+</div>

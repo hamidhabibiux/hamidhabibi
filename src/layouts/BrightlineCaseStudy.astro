@@ -1,0 +1,442 @@
+---
+import { Image } from "astro:assets";
+
+import '../styles/brightline.css';
+/**************Image Imports */
+
+import digitalcontentgif from '../assets/Brightline/GIF/DigitalContent.gif';
+import keyInitiatives from '../assets/Brightline/PNG/Key Initiatives.png';
+import reefuiGIF from '../assets/Brightline/GIF/Brightline UI Recording in Mockup.gif';
+import providercontentGIF from '../assets/Brightline/GIF/ProviderContent.gif'
+import parentandchild from '../assets/Brightline/PNG/Parent&YoungChild.png';
+import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey.png';
+import personThinking from '../assets/Brightline/PNG/Person Thinking.png';
+import mxCXchart from '../assets/Brightline/PNG/MemberProvider Experience.png';
+import hamidandLeon from '../assets/Brightline/PNG/Mock Coaching.png';
+import navigationGIF from '../assets/Brightline/GIF/Navigation.gif';
+import sidebarIteration from '../assets/Brightline/PNG/Sidebar Navigationv2.png';
+import tabIteration from '../assets/Brightline/PNG/Tab Explorationv4.png';
+import reefGreen from '../assets/Brightline/PNG/Reef Hero with Changes.png';
+import contentdiscoveryGreen from '../assets/Brightline/PNG/Content Discovery Hero with Changes.png';
+import assignpreviewGIF from '../assets/Brightline/GIF/Assign and Preview in Mockup.gif';
+import cardsGIF from '../assets/Brightline/GIF/Cards in Mockup.gif';
+import filtersGIF from '../assets/Brightline/GIF/Filters in Mockup.gif';
+import initialStateIteration from '../assets/Brightline/PNG/Initial State Iteration.png';
+import suggestedTopicsIteration from '../assets/Brightline/PNG/Suggested Topics Iteration.png';
+import multiTopicIteration from '../assets/Brightline/PNG/Filter Results Iteration.png';
+
+
+import assignpreviewVID from '../assets/Brightline/Video/assignandpreview.mp4?url';
+import cardsVID from '../assets/Brightline/Video/cardsinmockup.mp4?url';
+import filtersVID from '../assets/Brightline/Video/filtersinmockup.mp4?url';
+import reefuiVID from '../assets/Brightline/Video/reefui.mp4?url';
+import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url';
+
+/****************END OF IMAGE IMPORTS */
+---
+
+<head>
+    <link rel="preload" href={assignpreviewVID} as="video" type="video/mp4">
+</head>
+
+
+<div class="hero-image"> 
+    <img src={digitalcontentgif.src} width={digitalcontentgif.width*.5} height={digitalcontentgif.height*.5} style="max-width: 100%; width:60%; height: auto;"/>
+</div>
+<div class="casestudy-contentpadding">
+<div class="casestudy-hero">
+    <h2>Brightline Provider Experience</h2>
+    <h4 style="color: #B8B8B8;">Enabling behavioral therapy through digital health tools</h4>
+    <div class="casestudy-chiprow">
+        <div id="dateChip" class="casestudy-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M12.6667 12.668H3.33333V5.33464H12.6667M10.6667 0.667969V2.0013H5.33333V0.667969H4V2.0013H3.33333C2.59333 2.0013 2 2.59464 2 3.33464V12.668C2 13.0216 2.14048 13.3607 2.39052 13.6108C2.64057 13.8608 2.97971 14.0013 3.33333 14.0013H12.6667C13.0203 14.0013 13.3594 13.8608 13.6095 13.6108C13.8595 13.3607 14 13.0216 14 12.668V3.33464C14 2.98101 13.8595 2.64187 13.6095 2.39183C13.3594 2.14178 13.0203 2.0013 12.6667 2.0013H12V0.667969M11.3333 8.0013H8V11.3346H11.3333V8.0013Z" fill="#515155"/>
+            </svg>
+            <p class="chipText">Jun - Sep 2022</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">UX Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">Service Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">3 PM</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">5 Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">3 SWE</p>
+        </div>
+    </div>
+    <h4>Overview</h4>
+    <p>I worked as a UX Design intern for Brightline’s Provider Experience team. As Brightline is a digital health startup providing behavioral health services for children and their families, most of my internship focused on designing tools for our care providers. All of the showcased initiatives and their designs were shipped and positively received by our providers.</p>
+</div>
+<div id="flex24px" class="casestudy-container64">
+    <div class="eightpxFlex">
+        <h4>Key Initiatives</h4>
+        <p>As a key intern in the discovery and design of 2 care initiatives on the Provider Experience Team, I focused on designing tools to help prepare providers for care sessions.</p>
+    </div>
+        <img class="fullSizeImage" src={keyInitiatives.src} width={keyInitiatives.width} height={keyInitiatives.height} />
+</div>
+<div id="flex24px" class="casestudy-container48">
+    <div class="eightpxFlex">
+        <h4>Reef Discovery</h4>
+        <p>A complete redesign to the original health record system, Reef, that Brightline providers utilize. This discovery focused on taking Reef from an (overwhelming) simple design in the early startup stages to a product developed around our therapist and coach necessities.</p>
+    </div>
+    <div class="imagecontainer">
+        <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline >
+            <source src={reefuiVID} type="video/mp4" />
+        </video>
+    </div>
+    
+</div>
+<div id="flex24px" class="casestudy-container48">
+    <div class="eightpxFlex">
+        <h4>Provider Content Discovery</h4>
+        <p>Our in house content was rarely being utilized. We designed an easy to use content repository directly in Reef that enabled blended care service to better serve kids with lower attention spans while opening up our clinical supply during peak care hours.</p>
+    </div>
+    <div class="imagecontainer">
+        <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={cardsVID}></video>
+    </div>
+</div>
+
+<section id="research" class="casestudy-container128">
+    <div class="sectionTextContainer">
+    <p class="sectionText">01// Understanding Brightline</p>
+    </div>
+    <div class="twocolumn-grid">
+        <img class="fullSizeImage" src={parentandchild.src} width={parentandchild.width} height={parentandchild.height} />
+        
+        <div class="textinTwoColumn">
+            <h4>Who are the coaches and therapists?</h4>
+            <p>Brightline is built on meeting families in their day to day lives, and this ultimately relies on the product team empowering our providers to deliver care in a timely manner.
+                <br />
+                <br />
+                As an intern joining a high-paced startup, I sought to understand the Brightline business model to ultimately capture the pain points and struggles our Provider team was facing.</p>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>Ideal Brightline Journey</h4>
+        <img class="fullSizeImage" src={brightlinejourney.src} width={brightlinejourney.width} height={brightlinejourney.height} />
+    </div>
+
+    <div class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">RESEARCH SUMMARY</p>
+        <div class ="threeColumn">
+            <div class="columnedTextContainer">
+                <b>1/ Review Existing Research</b>
+                <p class="graySubText">I reviewed existing UXR studies and created my own based on recorded workshops.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>2/ Analyze Provider Survey</b>
+                <p class="graySubText">I synthesized our quarterly survey into quantifiable metrics, guiding our initiatives.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>3/ Conduct Mock Coaching</b>
+                <p class="graySubText">I conducted mock sessions with our coaches to step into a true Brightline care experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">REVIEWING EXISTING RESEARCH</p>
+    <p>To better understand the Brightline business and needs of our providers and families,
+        I reviewed our existing research study focused on the relationship that care builds between providers and caretakers<i> (Member’s Love Us).</i>
+        I also created a collaborative study focusing on guided engagement for incoming product members.</p>
+        
+    <section id="whatsgoingwell" class="casestudy-container">
+    <div id="whatsGoingWell" class="whatsgoingwell-headerTextContainer">
+        <h4>What's going well?</h4>
+        <section>
+        <div class ="twoColumn">
+            <div class="columnedTextContainer">
+                <b>1/ Member Love</b>
+                <p class="graySubText">Families find sessions enjoyable when they and their provider sync up, completing intake promptly and maximizing session time.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>2/ Provider Love</b>
+                <p class="graySubText">With updated provider care tools, our team handles clinical hours more smoothly within their existing workflows, reducing stress.</p>
+            </div>
+        </div>
+        </section>
+    </div>
+    <div id="whatsNotGoingWell" class="whatsgoingwell-headerTextContainer">
+        <h4>What's not going so well?</h4>
+        <section>
+        <div class ="threeColumn">
+            <div class="columnedTextContainer">
+                <b>1/ Too Many Tools</b>
+                <p class="graySubText">Accessing and sharing care-related documents were overly complex, requiring multiple team members' involvement for distribution to patients and their families.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>2/ Hard to Find Content</b>
+                <p class="graySubText">Our Digital Exercises and handouts spread across 5 platforms caused duplicative content and workflows, discouraging Brightline content use due to poor discoverability.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>3/ Scheduling & Reminders</b>
+                <p class="graySubText">Appointment and reminder creation is overwhelming, relying heavily on our support team, leading to forgetfulness and a subpar experience.</p>
+            </div>
+        </div>
+        </section>
+    </div>
+    </section>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">ANALYZE QUARTERLY PROVIDER SURVEY</p>
+    <div class="halfWidthText">
+        <p>Taking a deeper look at the metrics from our provider survey, we discovered that three key workflows were being hindered by the existing product experience.</p>
+    </div>
+    <div class="casestudy-container">
+        <div class ="threeColumn">
+            <div class="columnedTextContainer">
+                <h1 style="margin-bottom: 0; color: #E2D3C8">1/2</h1>
+                <p>of exercises/handouts were being assigned</p>
+            </div>
+            <div class="columnedTextContainer">
+                <h1 style="margin-bottom: 0; color: #E2D3C8;">10-15</h1>
+                <p>avg clicks to discover & share content</p>
+            </div>
+            <div class="columnedTextContainer">
+                <h1 style="margin-bottom: 0; color: #E2D3C8">42%</h1>
+                <p>of providers reported digital exercises as significant pain point</p>
+            </div>
+        </div>
+    </div>
+    <section class="casestudy-container48">
+        <div class="twoColumn">
+            <div class="textinTwoColumn">
+            <h4>What does this mean?</h4>
+            <p>For our providers, this implied a true reliance for existing material, adding to a dissatisfying and longer workflow with potential for inconsistency and errors.</p>
+            <p>For our business, this indicated a negative impact for long-term member and caregiver engagement, but identified a clear product opportunity.</p>
+            </div>
+            <img class ="twoColumnFullSizeImage" src={personThinking.src} height={personThinking.height} width={personThinking.width} />
+        </div>
+    </section> 
+    <div class="line"></div> 
+    <p class="graySpacedSectionHeader">CONDUCT MOCK COACHING SESSIONS</p>
+    <div class="halfWidthText">
+        <p>Due to patient privacy, the product team was not able to step into any sessions conducted with members in care. We could only go off of what we were hearing from both members and providers.</p>
+    </div>
+    <img class="fullSizeImagewMargin" src={mxCXchart.src} height={mxCXchart.height} width={mxCXchart.width} loading="lazy"/>  
+        <div class="twoColumn">
+            <div class="textinTwoColumn">
+            <h4>How did we empathize with the user?</h4>
+            <p>We conducted our own mock coaching sessions where my design manager and I took turns role playing a child and parent entering their intake session with situations in mind to really understand how coaches respond to an unideal session.</p>
+            <p class="graySubText">This co-design methodology enabled us to get immediate feedback, guide our decisions, and best design for our targeted user group.</p>
+            </div>
+            <img class ="FullSizeImage" src={hamidandLeon.src} height={hamidandLeon.height} width={hamidandLeon.width} loading="lazy" />
+        </div>
+    <div class="line"></div>
+</section>
+<section id="reef" class="section-topmargin"> <!--consider using the casestudy-container128 here when u remove the line -->
+    <div class="sectionTextContainer">
+        <p class="sectionText">02// Reef Designs</p>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h3>Reef Management</h3>
+            <p>Reef is the primary hub for our providers when preparing for appointments. With many of our providers expressing their frustration in their tools, we wanted to focus on making their primary hub more navigable in comparison to the original MVP Brightline was still utilizing.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={reefuiVID}></video>
+            
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Revamped UI to align with design system</h4>
+            <p>Most of the main content lies in the middle section and is exactly where our providers expect to find the actions and information they need. We didn’t want to change the functionality, but instead clean up our MVP designs to fit our growing design system.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" disablepictureinpicture playsinline  src={reefuiVID}></video>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>A More Forgiving Navigation</h4>
+            <p>Providers were tired of getting lost across all of their care cases, chats, and other administrative tasks. Our friendlier and forgiving navigation system aims to solve this issue. This comes in the form of a collapsible sidebar, member pills, section tabs, and breadcrumbs.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={navigationVID}></video>
+        </div>
+    </div>
+    <div id="reefDesignDecisions" class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">DESIGN DECISIONS</p>
+        <p class="halfWidthText">Based on our research, we kept 2 design principles at the forefront of our decision making.</p>
+        <div class="casestudy-container">
+            <div class="twoColumn">
+                <div class="columnedTextContainer">
+                    <b>1/ Preserve Existing Workflows</b>
+                    <p class="graySubText">Our providers wanted clearer navigation in our tools without disrupting their workflows. We aimed for cleanliness without unnecessary changes.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>2/ Efficient Access to Critical Information</b>
+                    <p class="graySubText">We aimed to streamline providers' access to member information in Reef, minimizing their time spent and offering clarity on their location within the platform.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="graySpacedSectionHeader">OUR EXPLORATIONS</p>
+        <div id="flex24px">    
+            <h4>Highlighted Designs</h4>
+            <img class="fullSizeImage" src={reefGreen.src} height={reefGreen.height} width={reefGreen.width} loading="lazy"/>
+            <div class="paddedTextFull">
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Collapsible sidebar</b> with focus on subpage navigability within care cases</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Breadcrumbs</b> added to reduce confusion within Reef while preserving existing workflows</p>
+                    </div>
+                </div>
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Refreshed primary UI</b> to implement new changes from growing design system</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText" style="color:white;"><b>Member Information</b> quickly gives providers information they need when assigning care tasks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flex24px" class="casestudy-container48">    
+            <h4>Sidebar Navigation</h4>
+            <img class="fullSizeImage" src={sidebarIteration.src} height={sidebarIteration.height} width={sidebarIteration.width} loading="lazy"/>
+            <p>We initially undervalued the clarity and access to subpages in our navbar. Daily usability checks revealed their frequent use and crucial information overlap, emphasizing the need for clear distinctions. Our final design incorporated colored guides in the submenu and collapsible navigation.</p>
+        </div>
+        <div id="flex24px" class="casestudy-container48">    
+            <h4>Tab Exploration</h4>
+            <img class="fullSizeImage" src={tabIteration.src} height={tabIteration.height} width={tabIteration.width} loading="lazy"/>
+            <p>We aimed for tab consistency in Reef initially, but our second iteration caused confusion, especially with higher-level tabs above them. Our final version, acknowledged by providers, clarified the layout, ensuring a clear understanding of its impact on the page.</p>
+        </div>
+    </div>
+</section>
+<section id="contentDiscovery" class="casestudy-container128">
+    <div class="sectionTextContainer">
+    <p class="sectionText">03// Provider Content Designs</p>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h3>Digital Content Discovery</h3>
+            <p>Digital Exercises and Handouts are key for keeping families motivated between sessions. The Content Discovery hub is essential to ensuring our brand and care quality grows consistently. For us, guiding our providers where we could in this discovery was key throughout this initiative.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={assignpreviewVID}></video>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Filters for your needs</h4>
+            <p>Care ranges and with each provider creating a new care plan for each member, we needed to design the search experience to be intuitive and easily digestible. Our filter system aims to guide their discovery and finding by focusing on age, care topics, and by offering suggestions.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={filtersVID}></video>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Informative Cards</h4>
+            <p>As many of these exercises were unknown to our providers, the information that they might be sharing with families needed to be easily scanned and digestible. Our cards came in different places, but focused on keeping the primary information while offering quick actions.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={cardsVID}></video>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Preview & Assign Content</h4>
+            <p>Our providers expressed their need to try out the exercises they were giving to members in care prior to sending them out. The preview & assign functionality would allow them to take a quick glance at the exercise and directly assign it.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={assignpreviewVID}></video>
+        </div>
+    </div>
+    <div id="reefDesignDecisions" class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">DESIGN DECISIONS</p>
+        <p class="halfWidthText">Once again, as we designed and met with our providers, we kept 3 design principles in mind.</p>
+        <div class="casestudy-container">
+            <div class="threeColumn">
+                <div class="columnedTextContainer">
+                    <b>1/ Surface Context Specific Material</b>
+                    <p class="graySubText">We aimed to emphasize a product underutilized by many providers, seeking to guide and enable real-time decision-making.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>2/ Minimize Number of Tools</b>
+                    <p class="graySubText">We focused on minimizing providers' time in Reef by offering reassurance about their location and simplifying access to member information.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>3/ Meet Providers in their Workflow</b>
+                    <p class="graySubText">Our providers had varied care delivery workflows. To accommodate this, we introduced assignment features within Reef.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="graySpacedSectionHeader">OUR EXPLORATIONS</p>
+        <div id="flex24px">    
+            <h4>Highlighted Designs</h4>
+            <img class="fullSizeImage" src={contentdiscoveryGreen.src} height={contentdiscoveryGreen.height} width={contentdiscoveryGreen.width} loading="lazy"/>
+            <div class="paddedTextFull">
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Collapsible sidebar</b> with focus on subpage navigability within care cases</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Breadcrumbs</b> added to reduce confusion within Reef while preserving existing workflows</p>
+                    </div>
+                </div>
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Refreshed primary UI</b> to implement new changes from growing design system</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText" style="color:white;"><b>Member Information</b> quickly gives providers information they need when assigning care tasks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flex24px" class="casestudy-container48">
+            <h4>Filter Cases</h4>
+            <div class="twoColumn">
+                <img class="fullSizeImage" src={initialStateIteration.src} height={initialStateIteration.height} width={initialStateIteration.width} loading="lazy"/>
+                <div class="columnedTextContainer">
+                    <b>Initial State</b>
+                    <p>Our providers would be accessing a new unknown library. In order to help them in searching for exercises, we greeted them with a collapsed view, only showing popular topics initially. This helps them explore new content that they might save for a later case.</p>
+                </div>
+            </div>
+            <div class="twoColumn">
+                <img class="fullSizeImage" src={multiTopicIteration.src} height={multiTopicIteration.height} width={multiTopicIteration.width} loading="lazy"/>
+                <div class="columnedTextContainer">
+                    <b>Expanded View & Multi Topic Select</b>
+                    <p>More topics can be found in the expanded view.
+                        <br /><br />
+                        Providers expressed that many of their members in care can benefit from multiple topics in focus. Being able to select multiple topics in the filter allows them to filter specific needs amongst their members in care.</p>
+                </div>
+            </div>
+            <div class="twoColumn">
+                <img class="fullSizeImage" src={suggestedTopicsIteration.src} height={suggestedTopicsIteration.height} width={suggestedTopicsIteration.width} loading="lazy"/>
+                <div class="columnedTextContainer">
+                    <b>Suggested Topics</b>
+                    <p>In the situation that there are no results based on the filters selected, providers are suggested content that may not fit the age requirements, but still fit in the topics selected. This helps providers explore additional content they did not previously consider.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+</div>
+
+<!-- <script>
+    //this script makes all the videos play on load
+    const allVideos = document.querySelectorAll('#theVideo')
+    allVideos.forEach(item => {
+        item.play();
+    })
+</script> -->

@@ -1,0 +1,228 @@
+---
+import { Image } from "astro:assets";
+
+import '../styles/microsoft.css';
+/**************Image Imports */
+import messagingGIF from '../assets/Microsoft/GIF/Final Messaging.gif';
+import prospectingGIF from '../assets/Microsoft/GIF/Final Prospecting.gif';
+import onboardingGIF from '../assets/Microsoft/GIF/Final Onboarding.gif';
+import flowChats from '../assets/Microsoft/PNG/FlowChats.png';
+import insideSeller from '../assets/Microsoft/PNG/Inside Seller.png';
+import fieldSeller from '../assets/Microsoft/PNG/Field Seller.png';
+import interviewChart from '../assets/Microsoft/PNG/Interview Chart.png';
+import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
+import manageclientsGIF from '../assets/Microsoft/GIF/Final Manage Clients.gif';
+import prospectingIteration from '../assets/Microsoft/PNG/Prospecting Iterationsv2.png';
+import messagingIteration from '../assets/Microsoft/PNG/Messaging Iterationv2.png';
+import outreachIteration from '../assets/Microsoft/PNG/Outreach Iterationv2.png';
+import reflectionMockup from '../assets/Microsoft/PNG/Microsoft Team mockup.png';
+import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.png';
+/****************END OF IMAGE IMPORTS */
+---
+<div class="hero-image"> 
+    <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} />
+    <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={messagingGIF.height} >
+</div>
+<div class="casestudy-contentpadding">
+<div class="casestudy-hero">
+    <h2>Microsoft Salescatcher</h2>
+    <h4 style="color: #B8B8B8;">An all-in-one solution for B2B sellers to connect and close sales</h4>
+    <div class="casestudy-chiprow">
+        <div id="dateChip" class="casestudy-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M12.6667 12.668H3.33333V5.33464H12.6667M10.6667 0.667969V2.0013H5.33333V0.667969H4V2.0013H3.33333C2.59333 2.0013 2 2.59464 2 3.33464V12.668C2 13.0216 2.14048 13.3607 2.39052 13.6108C2.64057 13.8608 2.97971 14.0013 3.33333 14.0013H12.6667C13.0203 14.0013 13.3594 13.8608 13.6095 13.6108C13.8595 13.3607 14 13.0216 14 12.668V3.33464C14 2.98101 13.8595 2.64187 13.6095 2.39183C13.3594 2.14178 13.0203 2.0013 12.6667 2.0013H12V0.667969M11.3333 8.0013H8V11.3346H11.3333V8.0013Z" fill="#515155"/>
+            </svg>
+            <p class="chipText">Feb - May 2022</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">UX Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">UX Research</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">4 Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">1 Design Mentor</p>
+        </div>
+    </div>
+    <h4>Overview</h4>
+    <p>In Spring 2022, Microsoft approached Berkeley Innovation with a collaborative project in mind, aimed at improving tools for B2B sellers. 
+        <br /><br />
+        Recognizing the inefficiencies in the seller's workflow, my team and I conducted interviews and workshops to gain insights. We subsequently designed a mobile platform that streamlines seller tasks, enabling them to connect with potential buyers and automate manual processes. This project ultimately garnered enthusiastic feedback from Microsoft's Digital Transformation Studio and continues to progress toward a future release.</p>
+</div>
+<div id="flex24px" class="casestudy-container64">
+    <p class="grayTextNotSpaced">KEY EXPERIENCES</p>
+
+    <div class="eightpxFlex">
+        <h4>Enhanced Seller-Client Matchmaking</h4>
+        <p>The existing seller experience involves a complex process of researching and funneling clients before connecting them to a seller. Our solution aims to streamline this process by offering sellers access to potential clients, comprehensive information, and AI-driven recommendations that highlight the suitability of the buyer.</p>
+    </div>
+    <div class="imagecontainer">
+        <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} />
+    </div>
+</div>
+<div id="flex24px" class="casestudy-container48">
+    <div class="eightpxFlex">
+        <h4>Buyer-Seller Engagement Plugin</h4>
+        <p>A Microsoft Teams plugin empowering buyers to opt in for seller outreach while providing a platform for sellers to connect. Our objective is to offer buyers the chance to engage while maintaining control over unsolicited contact. This plugin facilitates curated interactions, putting the buyer in the driver's seat of the communication process.</p>
+    </div>
+    <div class="imagecontainer">
+        <img class="fullSizeImage" src={flowChats.src} width={flowChats.width} height={flowChats.height} />
+    </div>
+</div>
+<div id="flex24px" class="casestudy-container48">
+    <div class="eightpxFlex">
+        <h4>Efficient CRM Integration</h4>
+        <p>Our application streamlines seller onboarding by automating tedious tasks, minimizing mundane workflows. Additionally, sellers can seamlessly integrate their Primary CRM account with our platform, ensuring a cohesive and efficient workflow. This solution aims to elevate productivity by eliminating manual processes.</p>
+    </div>
+    <div class="imagecontainer">
+        <img class="testingMsImages" src={onboardingGIF.src} width={onboardingGIF.width} height={onboardingGIF.height}/>
+    </div>
+</div>
+<section id="theProblem" class="casestudy-container128">
+    <div class="sectionTextContainer">
+        <p class="sectionText">01// Understanding B2B Sellers</p>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>A high percentage of seller's time is not actually devoted to selling.</h4>
+            <p>We focused on two types of sellers, the Inside Seller and the Field Seller. Most of our sellers' time was spent across a plethora of tools and communication systems, hindering the sales process.</p>
+        </div>
+        <div class="twoImageHolder">
+            <img src={insideSeller.src} width={insideSeller.width} height={insideSeller.height} />
+            <img src={fieldSeller.src} width={fieldSeller.width} height={fieldSeller.height}/>
+        </div>
+    </div>
+    <div class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">RESEARCH SUMMARY</p>
+        <div class ="twoColumn">
+            <div class="columnedTextContainer">
+                <b>1/ Seller Interviews</b>
+                <p class="graySubText">We conducted interviews with 8 sellers across different industries to understand where we could help them.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>2/ Existing Sales Tool Audit</b>
+                <p class="graySubText">We evaluated popular sales tools to gain insight into sellers’ routines and daily workspace.</p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">SELLER INTERVIEWS</p>
+    <p>Interviews seemed like the best way to really understand why sellers were stuck in a wide array of tools rather than actually selling their products. The following diagram depicts how we structured our interviews.</p>
+    <div class="casestudy-container">
+        <img class="fullSizeImage" src={interviewChart.src} width={interviewChart.width} height={interviewChart.height} loading="lazy"/>
+    </div>
+    <div class="casestudy-container48">
+        <div id="whatsNotGoingWell" class="whatsgoingwell-headerTextContainer">
+            <h4>What did we learn?</h4>
+            <section>
+            <div class ="threeColumn">
+                <div class="columnedTextContainer">
+                    <b>1/ Sellers don't like mindless work</b>
+                    <p class="graySubText">Excessive manual data entry and client progression were common, leaving sellers feeling these tasks lacked value.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>2/ Sellers prioritize progression</b>
+                    <p class="graySubText">Sellers consistently expressed a desire to focus on advancing sales rather than constant maintenance, hoping for tools that would aide in closing deals.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>3/ Current tools are unforgiving</b>
+                    <p class="graySubText">Existing CRMs are slowing down sellers, who seek tools that guide them swiftly, akin to the user-friendly apps in their personal lives.</p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">EXSISTING SALES TOOL AUDIT</p>
+    <p>With little known about a seller’s workflow, we wanted to get a better idea of the tools they were spending time in. For us, this meant breaking the space into the types of tools and trying to jump into a popular CRM, such as Salesforce.</p>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>What are these tools?</h4>
+        <p>Due to our project timeline, we couldn't explore all available tools. However, it was reassuring that many align with seller CRMs and cover overlapping needs.</p>
+        <img class="fullSizeImage" src={toolAudit.src} width={toolAudit.width} height={toolAudit.height} loading="lazy"/>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">THE CHALLENGE</p>
+    <p style="text-align: center;">Can we create a tool that integrates into diverse seller routines focused on minimizing the mundane tasks that they face in their day to day while harmonizing seamlessly with their CRM platform.</p>
+
+</section>
+
+<section id="salescatcher" class="casestudy-container128">
+    <div class="sectionTextContainer">
+    <p class="sectionText">02// Salescatcher Designs</p>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>A new outreach channel</h4>
+            <p>Salescatcher is an all-in-one solution intended to help sellers reach clients, build their potential relationships, and progress through a sale, all while syncing their progress and client information with their respective CRM.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} loading="lazy" />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Potential clients found for you</h4>
+            <p>Potential buyers that fit the seller’s target demographic are found for them so they can decide who to reach out to and bring into their system. We wanted to give sellers the information that they need to make quick decisions, with AI justifying why the buyer was recommended.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} loading="lazy"/>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Manage and organize your buyers</h4>
+            <p>To minimize friction, sellers can swiftly assess and approach selected leads using our streamlined buyer profiles, analytics, and organization tools.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="testingMsImages" src={manageclientsGIF.src} width={manageclientsGIF.width} height={manageclientsGIF.height} loading="lazy"/>
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>MS Teams app for buyers</h4>
+            <p>Our Teams app, Flow, enables organizations interested in being contacted to opt in, completing a two-way communication channel, respecting buyers' preferences within the Microsoft workspace's non-intrusive environment.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={flowChats.src} width={flowChats.width} height={flowChats.height} loading="lazy"/>
+        </div>
+    </div>
+</section>
+<section id="salescatcherExplorations" class="casestudy-container128">
+    <p class="graySpacedSectionHeader">DESIGN EXPLORATIONS</p>
+    <div id="flex24px">
+        <h4>Prospecting Flow</h4>
+        <p>Initially emulating personal app interactions, we looked at dating apps, but encountered issues. Prioritizing the ability to manage ongoing prospects and choose from multiple buyers became our focus.</p>
+        <img class="fullSizeImage" src={prospectingIteration.src} width={prospectingIteration.width} height={prospectingIteration.height} loading="lazy"/>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>Contacts Exploration</h4>
+        <p>In early designs, we emphasized organization by sale progression, but found it distracting. Our final iteration lets seller recognize clients, track sale status through their last message, and organize buyers efficiently.</p>
+        <img style="max-width: 60%; margin: auto;"class="fullSizeImage" src={messagingIteration.src} width={messagingIteration.width} height={messagingIteration.height} loading="lazy"/>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>Outreach Exploration</h4>
+        <p>For a mobile seller, having necessary information at hand is crucial. We segmented buyer details into distinct pages, streamlining access and integrating Microsoft apps for setting up future calls.</p>
+        <img class="fullSizeImage" src={outreachIteration.src} width={outreachIteration.width} height={outreachIteration.height} loading="lazy"/>
+    </div>
+</section>
+
+<section id="Reflection" class="casestudy-container128">
+    <div class="sectionTextContainer">
+    <p class="sectionText">03// Reflection</p>
+    </div>
+    <div class="casestudy-container48">
+    <div class="twoColumn">
+        <div class="columnedText" style="display: grid; align-content: space-between;">
+            <p>This was my first contracted project, and definitely an unforgettable one. The team at Microsoft constantly pushed us to think differently and explore creative solutions to a relatively stagnant process. With this, I am super proud of the solution our team delivered.
+                <br /><br />
+                Thank you to Deb, Florin, Josh, Karen, Liz O, Liz K, Jonah, and everyone else who was involved throughout this project.</p>
+            <img class="fullScreenImage" src={reflectionScreenshot.src} width={reflectionScreenshot.width} height={reflectionScreenshot.height} loading="lazy"/>
+        </div>
+        <img class="fullScreenImage" style="width: 80%" src={reflectionMockup.src} width={reflectionMockup.width} height={reflectionMockup.height} loading="lazy"/>
+    </div>
+    </div>
+</section>
+</div>

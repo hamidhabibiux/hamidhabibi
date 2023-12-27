@@ -1,5 +1,10 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import SideBar from '../layouts/HomeView.astro';
+import RightSide from '../layouts/homeRightSide.astro';
 
+import '../styles/global.css'
+import '../styles/indexpageview.css';
 ---
 
 <html lang="en">
@@ -8,9 +13,28 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Hamid Habibi</title>
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<!-- <ViewTransitions />  -->
+		<style>
+			.sidebar-container{
+				padding: 3vh;
+			}
+
+			.right-container{
+				background-color: #fff;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="full-container">
+			<div class="sidebar-container">
+				<SideBar />
+			</div>
+			<div class="right-container">
+				<RightSide />
+			</div>
+		</div>
 	</body>
 </html>

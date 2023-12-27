@@ -1,0 +1,28 @@
+/******************************
+
+    This is the Global Styling Sheet
+
+    THIS SHOULD ONLY BE USED FOR THE ENTIRE WEBSITE. DO NOT USE FOR FONT EDITS UNLESS IT WILL APPEAR THE SAME EVERYWHERE
+
+*******************************/
+
+body{
+    margin: 0px;
+}
+
+p {
+    font-family: 'Inter Var';
+    color: #515155;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+div{
+    transition: .3s all;
+
+}

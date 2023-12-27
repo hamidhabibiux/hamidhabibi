@@ -1,0 +1,33 @@
+/*******This is responsible for making sure the page split view works lol****/
+
+.full-container {
+    display: grid;
+    grid-template-columns: 1fr 1.33fr;
+    height: 100dvh;
+    min-height: 100dvh;
+    overflow-y: hidden;
+}
+
+/*this one will set the sidebar container to get smaller when the date disappears*/
+@media screen and (max-width: 1250px){ 
+    .full-container{
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+}
+@media screen and (max-width:875px){
+    .full-container{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        overflow-y: scroll;
+    }
+
+
+    .right-container{
+        display: none;
+    }
+}
+
+

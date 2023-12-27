@@ -1,0 +1,204 @@
+---
+import smallCharacter from '../assets/about/persona.png';
+import taiwan1 from '../assets/about/taiwan1.png'; 
+import taiwan2 from '../assets/about/taiwan2.png';
+import taiwan3 from '../assets/about/taiwan3.png';
+import hawaii1 from '../assets/about/hawaii1.png';
+import hawaii2 from '../assets/about/hawaii2.png';
+import hawaii3 from '../assets/about/hawaii3.png';
+import hawaii4 from '../assets/about/hawaii4.jpeg';
+import japan1 from '../assets/about/japan1.jpeg';
+import japan2 from '../assets/about/japan3.jpeg';
+import japan3 from '../assets/about/japan2.jpeg';
+
+---
+
+<style>
+.casestudy-contentpadding{
+    padding:3vh;
+}
+h1{
+    font-size: 3rem;
+    color: #5B483E;
+    font-family: 'Inter Var';
+    font-weight: 700;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+h2{
+    font-size: 2.25rem;
+    color: #5B483E;
+    font-family: 'Inter Var';
+    font-weight: 700; /*originaly 580 */
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-family: 'Inter Var';
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h4{
+    font-family: 'Inter Var';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+p {
+    font-family: 'Inter Var';
+    color: #515155;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+.twoColumn{
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    gap: 1.5rem;
+}
+
+#flex24px{ /*24px flex */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.casestudy-container{ /*36px margin top */
+margin-top: 2.25rem;
+}
+
+.casestudy-container48{
+    margin-top: 3rem;
+}
+
+.photo-sidescroll{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 20vw;
+    overflow-x: scroll;
+    
+}
+
+.photoHeaderContainer{
+        width: 100%;
+
+}
+
+.biggerPhotoContainer{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+/**************************
+
+        Media Query
+
+***************************/
+
+@media screen and (max-width:430px){ /*Sets mobile margin to 16px */
+
+.casestudy-contentpadding{
+    padding:1vh;
+}
+}
+
+
+@media screen and (max-width: 500px){
+    .threeColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .twoColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .halfWidthText{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:877px) and (max-width:1039px){
+    .threeColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .twoColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+}
+
+</style>
+
+<div class="casestudy-contentpadding">
+    <div id="flex24px">
+        <h3>Thanks for swinging by!</h3>
+        <div class="twoColumn">
+            <p>I'm a recent graduate from UC Berkeley, designing in the San Francisco Bay Area.
+            <br /><br />
+            Although growing up, I never looked into design as a possible career, I always caught myself DIY-ing the things around me to fit the mood I was feeling at the time — from Wii remote skins to spray painting my first ever longboard.
+            <br /><br />
+            UX Design is where I’ve found my home in Design and Product, but I'm always curious of how far I can stretch my wings when it comes to building solutions for my community.
+            </p>
+            <img style="width: 100%; height: auto;" src={smallCharacter.src} width={smallCharacter.width} height={smallCharacter.height} />
+        </div>
+    </div>
+    <div class="casestudy-container48">
+        <h4>Some things I've worked on</h4>
+        <div class="workList">
+
+        </div>
+    </div>
+    <div class="casestudy-container48">
+        <h4>Explore with me</h4>
+        <div id="flex24px" class="photoHeaderContainer">
+            <div class="biggerPhotoContainer">
+                <p>Taiwan - 2023</p>
+            <div class="photo-sidescroll">
+                <img style="width: auto; height: 100%;" src={taiwan1.src} height={taiwan1.height} width={taiwan1.width} />
+                <img style="width: auto; height: 100%;" src={taiwan2.src} height={taiwan2.height} width={taiwan2.width} />
+                <img style="width: auto; height: 100%;" src={taiwan3.src} height={taiwan3.height} width={taiwan3.width} />
+
+            </div>
+            </div>
+            <div class="biggerPhotoContainer">
+                <p>Japan - 2023</p>
+            <div class="photo-sidescroll">
+                <img style="width: auto; height: 100%;" src={japan1.src} height={japan1.height} width={japan1.width} />
+                <img style="width: auto; height: 100%;" src={japan2.src} height={japan2.height} width={japan2.width} />
+                <img style="width: auto; height: 100%;" src={japan3.src} height={japan3.height} width={japan3.width} />
+
+            </div>
+            </div>
+            <div class="biggerPhotoContainer">
+            <p>Hawaii - 2022</p>
+            <div class="photo-sidescroll">
+                <img style="width: auto; height: 100%;" src={hawaii1.src} height={hawaii1.height} width={hawaii1.width} />
+                <img style="width: auto; height: 100%;" src={hawaii2.src} height={hawaii2.height} width={hawaii2.width} />
+                <img style="width: auto; height: 100%;" src={hawaii3.src} height={hawaii3.height} width={hawaii3.width} />
+                <img style="width: auto; height: 100%;" src={hawaii4.src} height={hawaii4.height} width={hawaii4.width} />
+
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
