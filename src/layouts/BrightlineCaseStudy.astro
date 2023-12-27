@@ -449,4 +449,10 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url
     allVideos.forEach(item => {
         item.play();
     })
+    allVideos.forEach(item =>{
+        item.addEventListener('astro-page-load', () =>{
+            item.load();
+            item.play();
+        });
+    });
 </script>
