@@ -6,12 +6,19 @@ import '../styles/microsoft.css';
 import messagingGIF from '../assets/Microsoft/GIF/Final Messaging.gif';
 import prospectingGIF from '../assets/Microsoft/GIF/Final Prospecting.gif';
 import onboardingGIF from '../assets/Microsoft/GIF/Final Onboarding.gif';
+import manageclientsGIF from '../assets/Microsoft/GIF/Final Manage Clients.gif';
+
+/**video imports */
+import messagingVID from '../assets/Microsoft/Video/Final Messaging.mp4?url';
+import prospectingVID from '../assets/Microsoft/Video/Final Prospecting.mp4?url';
+import manageclientsVID from '../assets/Microsoft/Video/Final manage Clients.mp4?url';
+import onboardingVID from '../assets/Microsoft/Video/Final Onboarding.mp4?url';
+
 import flowChats from '../assets/Microsoft/PNG/FlowChats.png';
 import insideSeller from '../assets/Microsoft/PNG/Inside Seller.png';
 import fieldSeller from '../assets/Microsoft/PNG/Field Seller.png';
 import interviewChart from '../assets/Microsoft/PNG/Interview Chart.png';
 import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
-import manageclientsGIF from '../assets/Microsoft/GIF/Final Manage Clients.gif';
 import prospectingIteration from '../assets/Microsoft/PNG/Prospecting Iterationsv2.png';
 import messagingIteration from '../assets/Microsoft/PNG/Messaging Iterationv2.png';
 import outreachIteration from '../assets/Microsoft/PNG/Outreach Iterationv2.png';
@@ -20,8 +27,11 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
 /****************END OF IMAGE IMPORTS */
 ---
 <div class="hero-image"> 
-    <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} />
-    <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={messagingGIF.height} >
+    <!-- <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} />
+    <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={messagingGIF.height} > -->
+    <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={messagingVID} type="video/mp4" /></video>
+    <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={prospectingVID} type="video/mp4" /></video>
+
 </div>
 <div class="casestudy-contentpadding">
 <div class="casestudy-hero">
@@ -60,7 +70,8 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
         <p>The existing seller experience involves a complex process of researching and funneling clients before connecting them to a seller. Our solution aims to streamline this process by offering sellers access to potential clients, comprehensive information, and AI-driven recommendations that highlight the suitability of the buyer.</p>
     </div>
     <div class="imagecontainer">
-        <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} />
+        <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={prospectingVID} type="video/mp4" /></video>
+        <!-- <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} /> -->
     </div>
 </div>
 <div id="flex24px" class="casestudy-container48">
@@ -78,7 +89,8 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
         <p>Our application streamlines seller onboarding by automating tedious tasks, minimizing mundane workflows. Additionally, sellers can seamlessly integrate their Primary CRM account with our platform, ensuring a cohesive and efficient workflow. This solution aims to elevate productivity by eliminating manual processes.</p>
     </div>
     <div class="imagecontainer">
-        <img class="testingMsImages" src={onboardingGIF.src} width={onboardingGIF.width} height={onboardingGIF.height}/>
+        <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={onboardingVID} type="video/mp4" /></video>
+        <!-- <img class="testingMsImages" src={onboardingGIF.src} width={onboardingGIF.width} height={onboardingGIF.height}/> -->
     </div>
 </div>
 <section id="theProblem" class="casestudy-container128">
@@ -159,7 +171,9 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
             <p>Salescatcher is an all-in-one solution intended to help sellers reach clients, build their potential relationships, and progress through a sale, all while syncing their progress and client information with their respective CRM.</p>
         </div>
         <div class="imagecontainer">
-            <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} loading="lazy" />
+            <!-- <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} loading="lazy" /> -->
+            <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={messagingVID} type="video/mp4" /></video>
+
         </div>
     </div>
     <div id="flex24px" class="casestudy-container48">
@@ -168,7 +182,8 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
             <p>Potential buyers that fit the seller’s target demographic are found for them so they can decide who to reach out to and bring into their system. We wanted to give sellers the information that they need to make quick decisions, with AI justifying why the buyer was recommended.</p>
         </div>
         <div class="imagecontainer">
-            <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} loading="lazy"/>
+            <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={prospectingVID} type="video/mp4" /></video>
+            <!-- <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} loading="lazy"/> -->
         </div>
     </div>
     <div id="flex24px" class="casestudy-container48">
@@ -177,7 +192,8 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
             <p>To minimize friction, sellers can swiftly assess and approach selected leads using our streamlined buyer profiles, analytics, and organization tools.</p>
         </div>
         <div class="imagecontainer">
-            <img class="testingMsImages" src={manageclientsGIF.src} width={manageclientsGIF.width} height={manageclientsGIF.height} loading="lazy"/>
+            <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={manageclientsVID} type="video/mp4" /></video>
+            <!-- <img class="testingMsImages" src={manageclientsGIF.src} width={manageclientsGIF.width} height={manageclientsGIF.height} loading="lazy"/> -->
         </div>
     </div>
     <div id="flex24px" class="casestudy-container48">
@@ -226,3 +242,16 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
     </div>
 </section>
 </div>
+
+<script>
+
+        document.addEventListener('astro:page-load', () =>{
+            const allVideos = document.querySelectorAll('.testingMSVideos');
+            allVideos.forEach(item =>{
+                if (item instanceof HTMLVideoElement){
+                item.load();
+                item.play();
+                }
+            })
+        })
+    </script>

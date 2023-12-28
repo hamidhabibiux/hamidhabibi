@@ -233,6 +233,14 @@ p.chipText{
     gap: 2vw;
 }
 
+
+.testingMSVideos{
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+}
+
+
 /***********************************
         Case Study Content
 ***********************************/
