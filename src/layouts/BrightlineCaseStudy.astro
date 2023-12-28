@@ -459,8 +459,10 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url
     document.addEventListener('astro:page-load', () =>{
         const allVideos = document.querySelectorAll('.fullSizeVideo');
         allVideos.forEach(item =>{
+            if (item instanceof HTMLVideoElement){
             item.load();
             item.play();
+            }
         })
     })
 </script>
