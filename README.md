@@ -45,3 +45,16 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Notes to self
+
+### Reason for using Videos vs GIF
+A GIF recording of a mockup can come out to about 15-20mb for a 15 second clip related to a web application. On the other hand a properly encoded mp4 of it will only be 2mb. Due to bandwith limitations with netlify (100GB per month) it is much more reasonable to use these mp4s with proper coding.
+
+I have found that using the built in screen record on mac to work fine for recording these. Using the application "handbrake" with preset H.264 MKV 2160p60 4k, format MP4, and Web Optimized, we can convert these to smaller mp4 files that also fix a looping bug found in web browsers. If the file does not shrink down to around 2mb, use vlc to convert mov file to mp4 first and then use preset on handbrake.
+
+
+### Scripts being used
+There is currently a script at the end of the case study layouts that fixes a bug between viewtransitions api and video loading. Basically the script just makes the video fully load after the view transitions is completed.
+
+There are scripts being used for the home page  that seem to only work with view transitions enabled currently as well. This may break in the future, but hopefully not.
