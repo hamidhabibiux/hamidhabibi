@@ -223,6 +223,13 @@ p.chipText{
     height: 50vh;
 }
 
+
+.testingMSVideos{
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+}
+
 .twoImageHolder{
     text-align: center;
     display: grid;

@@ -5,10 +5,14 @@ import '../styles/youtube.css';
 import huntererPersona from '../assets/YouTube/PNG/Hunter User Persona.png';
 import gathererPersona from '../assets/YouTube/PNG/Gatherer User Persona.png';
 import preBrowsingFormGIF from '../assets/YouTube/GIF/PreBrowsing Form.gif';
+
+//video imports
+import preBrowsingFormVID from '../assets/YouTube/Video/PrebrowsingForm.mp4?url';
 ---
 
 <div class="hero-image"> 
-    <img style="text-align: center;" class="testingMsImages" src={preBrowsingFormGIF.src} width={preBrowsingFormGIF.width} height={preBrowsingFormGIF.height} />
+    <!-- <img style="text-align: center;" class="testingMsImages" src={preBrowsingFormGIF.src} width={preBrowsingFormGIF.width} height={preBrowsingFormGIF.height} /> -->
+    <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={preBrowsingFormVID} type="video/mp4" /></video>
 
 </div>
 <div class="casestudy-contentpadding">
@@ -98,3 +102,27 @@ import preBrowsingFormGIF from '../assets/YouTube/GIF/PreBrowsing Form.gif';
         </div>
     </div>
 </div>
+
+<script>
+    // <!-- <script is:inline> -->
+        //this script makes all the videos play on load
+        // const allVideos = document.querySelectorAll('.fullSizeVideo')
+        // allVideos.forEach(item => {
+        //     item.play();
+        // })
+        // allVideos.forEach(item =>{
+        //     item.addEventListener('astro-page-load', () =>{
+        //         item.load();
+        //         item.play();
+        //     });
+        // });
+        document.addEventListener('astro:page-load', () =>{
+            const allVideos = document.querySelectorAll('.testingMSVideos');
+            allVideos.forEach(item =>{
+                if (item instanceof HTMLVideoElement){
+                item.load();
+                item.play();
+                }
+            })
+        })
+    </script>
