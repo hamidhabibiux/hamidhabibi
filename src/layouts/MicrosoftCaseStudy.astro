@@ -248,9 +248,10 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
         document.addEventListener('astro:page-load', () =>{
             const allVideos = document.querySelectorAll('.testingMSVideos');
             allVideos.forEach(item =>{
-                item.load();
-                item.play();
-                
-            })
+            if (item instanceof HTMLVideoElement){
+            item.load();
+            item.play();
+            }
+        })
         })
     </script>
