@@ -249,6 +249,7 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
             const allVideos = document.querySelectorAll('.testingMSVideos');
             allVideos.forEach(item =>{
                 item.load();
+                item.currentTime = 0.1;
                 item.play();
                 
             })
