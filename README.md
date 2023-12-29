@@ -58,3 +58,7 @@ I have found that using the built in screen record on mac to work fine for recor
 There is currently a script at the end of the case study layouts that fixes a bug between viewtransitions api and video loading. Basically the script just makes the video fully load after the view transitions is completed.
 
 There are scripts being used for the home page  that seem to only work with view transitions enabled currently as well. This may break in the future, but hopefully not.
+
+
+### Container Sizing
+I recently shifted from 1fr 1.33fr to 1fr 1.5fr -- I should test this out and experiment if the sizing is too small for the left view. Currently it still doesn't feel like just a sidebar

@@ -1,5 +1,7 @@
 .casestudy-contentpadding{
-    padding:3vh;
+    padding:2rem;
+    
+    /* must set max width somehow */
 }
 .hero-image{
     padding: 3vh;

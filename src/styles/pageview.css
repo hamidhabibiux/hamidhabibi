@@ -2,7 +2,8 @@
 
 .full-container {
     display: grid;
-    grid-template-columns: 1fr 1.33fr;
+    /* grid-template-columns: 1fr 1.33fr; */
+    grid-template-columns: 1fr 1.5fr;
     height: 100dvh;
     min-height: 100dvh;
     overflow-y: hidden;
