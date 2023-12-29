@@ -29,7 +29,7 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
 <div class="hero-image"> 
     <!-- <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} />
     <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={messagingGIF.height} > -->
-    <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={messagingVID} type="video/mp4" /></video>
+    <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline preload="auto" ><source src={messagingVID} type="video/mp4" /></video>
     <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={prospectingVID} type="video/mp4" /></video>
 
 </div>
@@ -243,7 +243,7 @@ import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.
 </section>
 </div>
 
-<script is:inline>
+<script>
 
         document.addEventListener('astro:page-load', () =>{
             const allVideos = document.querySelectorAll('.testingMSVideos');
