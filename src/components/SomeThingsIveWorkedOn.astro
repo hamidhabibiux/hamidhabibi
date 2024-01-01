@@ -1,6 +1,6 @@
 <style>
     .aboutwork-container{
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction:column;
         gap: 24px;
@@ -9,12 +9,21 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    gap: 16px;
+    }
+
+    .q-a:hover{
+        cursor:pointer;
     }
     .q-a-title{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .q-a-button{
+        transition: transform .5s ease-in-out;
     }
 
     span{
@@ -28,48 +37,103 @@
     .q-a-desc{
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease; 
+        transition: max-height 0.5s ease-in-out; 
+        margin-top: .5rem;
+    margin-bottom: .5rem;
     }
 
     .q-a-desc-Opened{
         height: auto;
         max-height: 1000px;
-        transition: max-height 1.3s ease; 
+        transition: max-height 1.5s ease-in-out; 
 
+    }
+
+    .arrowFlip{
+        transform:rotateZ(180deg);
     }
     
 </style>
 
 <div class="aboutwork-container">
-    <div class="q-a">
+    <div class="q-a" id="youtube-qa">
         <div class="q-a-title">
             <div class="q-a-name">
-                <span class="q-a-span">Brightline</span> UX Design
+                <span class="q-a-span">YouTube</span> <span style="font-weight: 480; font-size: 1rem; color:#696767;">· Design Mentor (Contract), 2023</span>
             </div>
             <div class="q-a-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="#515155"/>
                   </svg>
             </div>
         </div>
         <div class="q-a-desc">
-            <p>Led workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to use</p>
+            <p>Led a semester-long human-centered design project, mentoring four consultants while delivering mobile design recommendations for a centralized, personalized experience and conducting strategic client outreach.</p>
         </div>
     </div>
 
-    <div class="q-a">
+    <div class="q-a" id="brightline-qa">
         <div class="q-a-title">
             <div class="q-a-name">
-                <span class="q-a-span">Brightline</span> UX Design
+                <span class="q-a-span">Brightline</span> <span style="font-weight: 480; font-size: 1rem; color:#696767;">· UX Design Intern, 2022</span>
             </div>
             <div class="q-a-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="#515155"/>
                   </svg>
             </div>
         </div>
         <div class="q-a-desc">
-            <p>Led workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to use</p>
+            <p>
+                As an intern at Brightline, I led workshops and co-design sessions with therapists and coaches while crafting a centralized digital resource for them to find supplementary exercises.</p>
+        </div>
+    </div>
+
+    <div class="q-a" id="ms-qa">
+        <div class="q-a-title">
+            <div class="q-a-name">
+                <span class="q-a-span">Microsoft</span> <span style="font-weight: 480; font-size: 1rem; color:#696767;">· Product Designer (Contract), 2022</span>
+            </div>
+            <div class="q-a-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="#515155"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="q-a-desc">
+            <p>
+                I modernized the traditional sales approach by creating a CRM-integrated platform, boosting seller productivity and establishing a bidirectional link within Microsoft's 365 workspace through collaboration with research and design leads.</p>
+        </div>
+    </div>
+    <div class="q-a" id="handshake-qa">
+        <div class="q-a-title">
+            <div class="q-a-name">
+                <span class="q-a-span">Handshake</span> <span style="font-weight: 480; font-size: 1rem; color:#696767;">· Product Designer (Contract), 2022</span>
+            </div>
+            <div class="q-a-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="#515155"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="q-a-desc">
+            <p>I created a web learning platform catering to college students, facilitating access to online courses, sharing tips, and aiding in job search preparation.</p>
+        </div>
+    </div>
+    <div class="q-a" id="BI-qa">
+        <div class="q-a-title">
+            <div class="q-a-name">
+                <span class="q-a-span">Berkeley Innovation</span> <span style="font-weight: 480; font-size: 1rem; color:#696767;">· Human-Centered Design Instructor, 2022</span>
+            </div>
+            <div class="q-a-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="#515155"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="q-a-desc">
+            <p>
+                I instructed a foundational Product Design course for 50 UC Berkeley students, emphasizing Human-Centered Design principles. This involved leading interactive discussions, delivering lectures, offering design critiques for enriched learning, and meticulously preparing course materials relevant to the design industry.</p>
         </div>
     </div>
 </div>
@@ -85,8 +149,11 @@
             item.addEventListener("click", function() {
                 if (descList[clickedIndex].classList.contains('q-a-desc-Opened')){
                     descList[clickedIndex].classList.remove('q-a-desc-Opened');
+                    buttonList[clickedIndex].classList.remove('arrowFlip');
                 }else{
                     descList[clickedIndex].classList.add('q-a-desc-Opened');
+                    buttonList[clickedIndex].classList.add('arrowFlip');
+
                 };
             });
         });
