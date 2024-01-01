@@ -1,0 +1,97 @@
+<style>
+    .aboutwork-container{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        gap: 24px;
+    }
+    .q-a{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    }
+    .q-a-title{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span{
+        font-family: 'Inter Var';
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    }
+
+    .q-a-desc{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease; 
+    }
+
+    .q-a-desc-Opened{
+        height: auto;
+        max-height: 1000px;
+        transition: max-height 1.3s ease; 
+
+    }
+    
+</style>
+
+<div class="aboutwork-container">
+    <div class="q-a">
+        <div class="q-a-title">
+            <div class="q-a-name">
+                <span class="q-a-span">Brightline</span> UX Design
+            </div>
+            <div class="q-a-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="black"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="q-a-desc">
+            <p>Led workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to use</p>
+        </div>
+    </div>
+
+    <div class="q-a">
+        <div class="q-a-title">
+            <div class="q-a-name">
+                <span class="q-a-span">Brightline</span> UX Design
+            </div>
+            <div class="q-a-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8858C16.2374 21.1787 15.7626 21.1787 15.4697 20.8858L7.82318 13.2393C7.53029 12.9464 7.53029 12.4716 7.82318 12.1787L8.17674 11.8251C8.46963 11.5322 8.9445 11.5322 9.2374 11.8251L16 18.5877L22.7626 11.8251C23.0555 11.5322 23.5303 11.5322 23.8232 11.8251L24.1768 12.1787C24.4697 12.4716 24.4697 12.9464 24.1768 13.2393L16.5303 20.8858Z" fill="black"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="q-a-desc">
+            <p>Led workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to useLed workshops and designed tools for our provider teams to use</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('astro:page-load', ()=>{
+        const qaList = document.querySelectorAll('.q-a');
+        const buttonList = document.querySelectorAll('.q-a-button');
+        const descList = document.querySelectorAll('.q-a-desc');
+
+        qaList.forEach(item =>{
+            const clickedIndex = Array.from(qaList).indexOf(item);
+            item.addEventListener("click", function() {
+                if (descList[clickedIndex].classList.contains('q-a-desc-Opened')){
+                    descList[clickedIndex].classList.remove('q-a-desc-Opened');
+                }else{
+                    descList[clickedIndex].classList.add('q-a-desc-Opened');
+                };
+            });
+        });
+
+
+        
+    })
+</script>

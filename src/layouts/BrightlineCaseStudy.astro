@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 
 import '../styles/brightline.css';
+
+import NavDropDown from "../components/NavDropDown.astro";
 /**************Image Imports */
 
 import digitalcontentgif from '../assets/Brightline/GIF/DigitalContent.gif';
@@ -40,6 +42,8 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockupv2.mp4?u
     <img src={digitalcontentgif.src} width={digitalcontentgif.width*.5} height={digitalcontentgif.height*.5} style="max-width: 100%; width:60%; height: auto;"/>
 </div>
 <div class="casestudy-contentpadding">
+    <section id="Overview">
+    <!-- <NavDropDown /> -->
 <div class="casestudy-hero">
     <h2>Brightline Provider Experience</h2>
     <h4 style="color: #B8B8B8;">Enabling behavioral therapy through digital health tools</h4>
@@ -98,7 +102,7 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockupv2.mp4?u
 
     </div>
 </div>
-
+</section>
 <section id="research" class="casestudy-container128">
     <div style="position: sticky; top: 20px; bottom: 20px;" class="sectionTextContainer">
     <p class="sectionText">01// Understanding Brightline</p>
