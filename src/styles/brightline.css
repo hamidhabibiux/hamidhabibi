@@ -101,6 +101,16 @@ b{
     max-width: 65%;
 }
 
+#hmw-text{
+    text-align: center;
+    background-color: #9a775c;
+    padding: 16px;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 560;
+}
 
 /******************* 
         Section text bubbles
