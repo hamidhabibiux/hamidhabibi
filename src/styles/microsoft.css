@@ -1,6 +1,7 @@
 .casestudy-contentpadding{
     padding:2rem;
-    
+    max-width: 960px;
+    margin: auto;
     /* must set max width somehow */
 }
 .hero-image{

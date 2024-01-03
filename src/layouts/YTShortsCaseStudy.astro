@@ -8,6 +8,8 @@ import preBrowsingFormGIF from '../assets/YouTube/GIF/PreBrowsing Form.gif';
 
 //video imports
 import preBrowsingFormVID from '../assets/YouTube/Video/PrebrowsingForm.mp4?url';
+import browsingBlendVID from '../assets/YouTube/Video//BrowsingBlendv2.mp4?url';
+import dashboardVID from '../assets/YouTube/Video/ShortsDashboard.mp4?url';
 ---
 
 <div class="hero-image"> 
@@ -46,11 +48,36 @@ import preBrowsingFormVID from '../assets/YouTube/Video/PrebrowsingForm.mp4?url'
             <br /><br />
             Although I did have the opportunity to lend my hand in research, ideation, and design, my consultants handled a majority of the designs related to the project. Therefore, this is intended to be a highlight of our output and work.</p>
     </div>
-    <div class="casestudy-container64">
+    <div id="flex24px" class="casestudy-container64">
         <div class="sectionTextContainer">
             <p class="sectionText">01// Final Recommendations</p>
         </div>
+        <div class="eightpxFlex">
+            <h4>Pre-Browsing Form</h4>
+            <p>Although Shorts is built on the back of YouTube's algorithm, we found that allowing users to explicitly select topics related to their interests while onboarding can generate a more personalized experience.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={preBrowsingFormVID} type="video/mp4" /></video>
+        </div>
     </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Dedicated Dashboard</h4>
+            <p>An intermediary page for navigating YouTube Shorts creates a distinct transition from long-form content to Shorts. Users are presented with content based on their interests, their browsing blends, and </p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={dashboardVID} type="video/mp4" /></video>
+            <!-- <img class="testingMsImages" src={onboardingGIF.src} width={onboardingGIF.width} height={onboardingGIF.height}/> -->
+        </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Browsing Blend</h4>
+            <p>Playlists between friends that are regularly updated based on a combination of their interests. Users are motivated to discover new content and creators that their friends are interested in.</p>
+        </div>
+        <div class="imagecontainer">
+            <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={browsingBlendVID} type="video/mp4" /></video>
+            <!-- <img class="testingMsImages" src={onboardingGIF.src} width={onboardingGIF.width} height={onboardingGIF.height}/> -->
+        </div>
 
     <div class="casestudy-container64">
         <div class="sectionTextContainer">
