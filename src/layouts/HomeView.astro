@@ -84,7 +84,7 @@ span {
     display: grid;
     grid-template-columns: 2.5fr 6.5fr 1fr;
     gap: 16px;
-    padding-block: 4px;
+    padding-block: 8px;
 }
 
 
@@ -145,13 +145,22 @@ span.casestudyDesc-mobile{
     display: grid;
     grid-template-columns: 2.5fr 6.5fr 1.5fr;
     gap: 24px;
-    padding-block: 4px;
+    padding-block: 8px;
 }
 
 }
-@media screen and (max-width: 1100px){
+@media screen and (min-width:860px) and (max-width:1100px){
     span.casestudyDate{
         display: none;
+    }
+    .casestudyItem{
+         grid-template-columns: 2.5fr 7fr;
+    }
+        }
+
+@media screen and (max-width: 1100px){
+    span.casestudyDate{
+        /* display: none; */
     }
 
     span.casestudyDesc-mobile{
@@ -162,9 +171,9 @@ span.casestudyDesc-mobile{
     }
     .casestudyItem{
         display: grid;
-        grid-template-columns: 2.5fr 7fr;
+        grid-template-columns: 2.5fr 6fr 1fr;
         gap: 16px;
-        padding-block: 4px;
+        padding-block: 8px;
     }
     #sidebarHeroMessage{
     width: 100%;
@@ -348,7 +357,7 @@ colorSquareContainers.forEach(item => {
 <div class="indexContainer">
     <div class="theHeader">
         <a href="/"><h1>Hamid Habibi</h1></a>
-        <a href="/about"><p>about</p></a>
+        <a href="/about"><p>About</p></a>
     </div>
     <div class="indexHeroMessage">
         <p id="sidebarHeroMessage">I’m an anti-disciplinary designer based in the SF Bay Area. I enjoy design, sometimes coding it, and spending time with my nephew.</p>
@@ -367,16 +376,18 @@ colorSquareContainers.forEach(item => {
                 <span class="casestudyDesc">Communication platform for B2B Sellers</span><span class="casestudyDesc-mobile">B2B Seller Tools</span>
                 <span class="casestudyDate">2022</span>
             </div></a>
-            <div id="handshakeItem" class="casestudyItem">
-                <span class="casestudyName">Handshake</span>
-                <span class="casestudyDesc">Skills platform for exploratory college students</span><span class="casestudyDesc-mobile">Online Skills Platform</span>
-                <span class="casestudyDate">2022</span>
-            </div>
             <a href="/youtube"><div id="youtubeItem" class="casestudyItem">
                 <span class="casestudyName">YouTube</span>
                 <span class="casestudyDesc">Dashboard for YouTube Shorts experience</span><span class="casestudyDesc-mobile">Dashboard for YouTube Shorts</span>
                 <span class="casestudyDate">2023</span>
             </div></a>
+            
+            <div id="handshakeItem" class="casestudyItem">
+                <span class="casestudyName">Handshake</span>
+                <span class="casestudyDesc">Skills platform for exploratory college students</span><span class="casestudyDesc-mobile">Online Skills Platform</span>
+                <span class="casestudyDate">2022</span>
+            </div>
+
             <div id="spotifyItem" class="casestudyItem">
                 <span class="casestudyName">Spotify</span>
                 <span class="casestudyDesc">Spotify Jam UI redesign</span><span class="casestudyDesc-mobile">Spotify Jam UI</span>
