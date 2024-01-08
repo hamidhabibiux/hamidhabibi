@@ -65,7 +65,7 @@ p {
     display: inline-flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 1rem;
+gap: 1.5rem;
 }
 
 img {
@@ -248,6 +248,12 @@ margin-top: 2.25rem;
 .casestudy-container128{
     margin-top: 8rem;
 }
+.titleSubtitle{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 
 #flex16px{
     display: inline-flex;
