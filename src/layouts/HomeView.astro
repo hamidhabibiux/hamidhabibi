@@ -112,6 +112,15 @@ span.casestudyDesc-mobile{
     display:none;
 }
 
+.aboutResume{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
 /**********************************
 
             Media Queries
@@ -357,7 +366,11 @@ colorSquareContainers.forEach(item => {
 <div class="indexContainer">
     <div class="theHeader">
         <a href="/"><h1>Hamid Habibi</h1></a>
-        <a href="/about"><p style="font-weight:700;">About</p></a>
+        <div class="aboutResume">
+            <a href="http://tinyurl.com/hamidsresume" target="_blank"><p style="font-weight: 700;">Resume</p></a>
+            <a href="/about"><p style="font-weight:700;">About</p></a>
+        
+        </div>
     </div>
     <div class="indexHeroMessage">
         <p id="sidebarHeroMessage">I’m a designer based in the SF Bay Area. I enjoy design and sometimes coding it. Having previously designed skateboard decks, I now focus on creating interactive designs tailored for the communities I serve. Check out my work below!</p>
