@@ -213,6 +213,12 @@ p.chipText{
     border-radius: 8px;
 }
 
+.fullSizeImageNoRounding{
+    max-width: 100%;
+    width: 100%;
+    height:auto;
+}
+
 .fullSizeImagewMargin{
     max-width: 100%;
     height:auto;
