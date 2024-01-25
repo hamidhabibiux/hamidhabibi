@@ -185,69 +185,167 @@ background: #D59F4E;
 #unclickedSVG:hover #clickedSVG{
     display:block;
 }
+
+
+
+/* NEW STYLE TAGS */
+h1 {
+    font-family: 'Inter Var';
+    font-size: 48px;
+    font-weight: bold;
+    color: #5B483E;
+    margin-block: 0;
+}
+p {
+    font-family: 'Inter Var';
+    font-size: 14px;
+    color: #515155;
+}
+
+.fullContainerRightSide{
+    scroll-snap-type: y mandatory;
+}
+
+.rightSection{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullSizeImage{
+    max-width: 100%;
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
+}
+
+
+/* Hero */
+
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} 
+
+
+
+#rightHero{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
+    background: linear-gradient(-45deg, #fff, #b6eddc, #f5ebe0, #f6f1ed);
+    background: linear-gradient(
+  45deg,
+  hsl(240deg 42% 93%) 0%,
+  hsl(342deg 63% 94%) 13%,
+  hsl(24deg 77% 94%) 25%,
+  hsl(44deg 51% 94%) 37%,
+  hsl(24deg 67% 95%) 50%,
+  hsl(7deg 49% 96%) 63%,
+  hsl(0deg 36% 96%) 75%,
+  hsl(0deg 34% 95%) 87%,
+  hsl(0deg 33% 94%) 100%
+);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#rightHero h1{
+    color:black;
+}
+#heroName{
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+/* Brightline */
+h2{
+    font-size: 2.25rem;
+    color: #5B483E;
+    font-family: 'Inter Var';
+    font-weight: 700; /*originally 580 */
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-family: 'Inter Var';
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h4{
+    font-family: 'Inter Var';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.casestudySectionText{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#rightBrightline{
+
+padding: 0rem 4rem;
+
+
+}
+
 </style>
 
-<div class="rightfull-container">
-<div class="twoColumnContainer">
-    <div class="colorSquresColumn">
-        <a href="/brightline"><div id="brightlineSquare-container" class="colorSquare-container">
-            <div id="brightlineSquare" class="colorSquare"></div>
-            <p>Brightline</p>
-        </div></a>
-        <a href="/microsoft"><div id="MicrsoftSquare-container" class="colorSquare-container">
-            <div id="msSquare" class="colorSquare"></div>
-            <p>Microsoft</p>
-        </div></a>
-        <a href="/youtube"><div id="YTShortsSquare-container" class="colorSquare-container">
-
-            <div id="ytSquare" class="colorSquare"></div>
-            <p>YouTube </p>
-        </div></a>
-        <div id="HandshakeSquare-container" class="colorSquare-container">
-            <div id="HandshakeSquare" class="colorSquare"></div>
-            <p>Handshake</p>
+<div class="fullContainerRightSide">
+    <section id="rightHero" class="rightSection">
+        <div id="heroName">
+            <h1>Hamid is a </h1>
+            <h1>Product Designer</h1>
+        </div>
+    </section>
+    <section id="rightBrightline" class="rightSection">
+        <div class="casestudySectionText">
+        <p class="date">2022</p>
+        <h1>Brightline</h1>
+        <!-- <h2>Brightline Provider Experience</h2> -->
+        <h4 style="color: #B8B8B8;">Enabling behavioral therapy through digital health tools</h4>
+        <img class= 'fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
 
         </div>
-        <div id="spotifySquare-container" class="colorSquare-container">
-            <div id="spotifySquare" class="colorSquare"></div>
-            <p>Spotify</p>
+    </section>
+    <section id="rightMicrosoft" class="rightSection">
 
-        </div>
-    </div>
-    <div class="duolingo">
-        <div class="circles">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-        </div>
-        <div class="circles"></div>
-        <div class="circles"></div>
-        <div class="circles"></div>
-        <div class="svgContainer">
-            <svg class="svgButtons" id="unclickedSVG" xmlns="http://www.w3.org/2000/svg" width="45" height="41" viewBox="0 0 45 41" fill="none">
-            <g clip-path="url(#clip0_2392_2068)">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 41C34.9265 41 45 32.9412 45 23V18C45 17.4478 44.5522 17 44 17H43.7197C40.6311 10.0088 32.2966 5 22.5 5C12.7034 5 4.3689 10.0088 1.28027 17H1C0.447754 17 0 17.4478 0 18V23C0 32.9412 10.0735 41 22.5 41Z" fill="#D59F4E"/>
-              <path d="M22.5 36C34.9264 36 45 27.9411 45 18C45 8.05887 34.9264 0 22.5 0C10.0736 0 0 8.05887 0 18C0 27.9411 10.0736 36 22.5 36Z" fill="#FFB876"/>
-                <text>1</text>
-            </g>
-            <defs>
-              <clipPath id="clip0_2392_2068">
-                <rect width="45" height="41" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-          <svg class="svgButtons" id="clickedSVG" xmlns="http://www.w3.org/2000/svg" width="45" height="41" viewBox="0 0 45 41" fill="none">
-            <path d="M22.5 41C34.9264 41 45 32.9411 45 23C45 13.0589 34.9264 5 22.5 5C10.0736 5 0 13.0589 0 23C0 32.9411 10.0736 41 22.5 41Z" fill="#FFB876"/>
-          </svg>
-          </div>
+    </section>
+    <section id="rightHandshake" class="rightSection">
 
-    </div>
-    <div class="bigImageContainer">
-        <img class= 'containerImg fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
-        <img id="msImage" class= 'containerImg fullSizeImage' src={redimage.src} width={redimage.width} height={redimage.height}>
-        <img id="ytImage" class= 'containerImg fullSizeImage' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
-        <img class= 'containerImg fullSizeImage' src={error404img.src} width={error404img.width} height={error404img.height}>
-        <img class= 'containerImg fullSizeImage' src={error404img.src} width={error404img.width} height={error404img.height}>
+    </section>
+    <section id="rightYoutube" class="rightSection">
 
-    </div>
-</div>
+    </section>
+    <section id="rightExplorations" class="rightSection">
+
+    </section>
 </div>
