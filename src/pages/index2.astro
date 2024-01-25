@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
-import SideBar from '../layouts/HomeView.astro';
+import SideBar from '../layouts/HomeView2.astro';
 import RightSide from '../layouts/homeRightSide2.astro';
 
 import '../styles/global.css'
@@ -19,7 +19,7 @@ import '../styles/indexpageview.css';
 		<ViewTransitions /> 
 		<style>
 			.sidebar-container{
-				padding: 3vh;
+				padding: 1.5rem;
 				border-right: solid lightgray .5px;
 
 			}
@@ -27,6 +27,7 @@ import '../styles/indexpageview.css';
 			.right-container{
 				background-color: #fff;
 				overflow-y: scroll;
+				scroll-snap-type: y mandatory;
 				
 			}
 		</style>
