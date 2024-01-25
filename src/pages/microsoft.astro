@@ -2,9 +2,11 @@
 import { ViewTransitions } from 'astro:transitions';
 import MicrosoftCaseStudy from '../layouts/MicrosoftCaseStudy.astro';
 import SideBar from '../layouts/HomeView.astro';
+import topNav from '../layouts/topNavBar.astro';
 
 import '../styles/global.css';
 import '../styles/pageview.css';
+import TopNavBar from '../layouts/topNavBar.astro';
 ---
 
 <html lang="en">
@@ -19,7 +21,7 @@ import '../styles/pageview.css';
         <ViewTransitions />
         <style>
             .sidebar-container{
-            padding: 3vh;
+				padding: 1.5rem;
             border-right: solid lightgray .5px;
 
             }
@@ -36,6 +38,7 @@ import '../styles/pageview.css';
                 <SideBar />
             </div>
             <div class="microsoft-container">
+                <TopNavBar />
                 <MicrosoftCaseStudy />
             </div>
         </div>

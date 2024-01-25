@@ -1,0 +1,68 @@
+---
+---
+<style>
+    h1 {
+    font-family: 'Inter Var';
+    font-size: 32px;
+    font-weight: bold;
+    color: #5B483E;
+    margin-block: 0;
+}
+p {
+    font-family: 'Inter Var';
+    font-size: 14px;
+    color: #515155;
+}
+.navButton{
+    display: inline-flex;
+padding: 0.5rem 0.75rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-radius: 0.25rem;
+}
+
+.navButton:hover{
+background-color: rgba(33, 33, 33, 0.05);
+}
+.themobileHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding: 1.5rem;
+}
+.aboutResume{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+a{
+    text-decoration: none;
+}
+.themobileHeader{
+    display: none;
+}
+
+@media screen and (max-width:875px) {
+    .themobileHeader{
+        display: flex;
+    }
+}
+</style>
+
+
+<div class="themobileHeader">
+    <a href="/"><h1 class="nameTitle">Hamid Habibi</h1></a>
+    <div class="aboutResume">
+        <a href="http://tinyurl.com/hamidsresume" target="_blank"><p class="navButton" style="font-weight: 700;">Resume</p></a>
+        <a href="/about"><p class="navButton" style="font-weight:700;">About</p></a>
+    
+    </div>
+
+
+</div>

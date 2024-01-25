@@ -2,6 +2,8 @@
 import { ViewTransitions } from 'astro:transitions';
 import AboutLayout from '../layouts/aboutlayout.astro';
 import SideBar from '../layouts/HomeView.astro';
+import TopNavBar from '../layouts/topNavBar.astro';
+
 
 import '../styles/global.css';
 import '../styles/pageview.css';
@@ -22,7 +24,7 @@ import '../styles/pageview.css';
         <ViewTransitions />
         <style>
             .sidebar-container{
-            padding: 3vh;
+				padding: 1.5rem;
             border-right: solid lightgray .5px;
             }
             .about-container{
@@ -39,6 +41,7 @@ import '../styles/pageview.css';
                 <SideBar />
             </div>
             <div class="about-container">
+                <TopNavBar />
                 <AboutLayout />
             </div>
         </div>

@@ -2,6 +2,8 @@
 import { ViewTransitions } from 'astro:transitions';
 import YouTubeCaseStudy from '../layouts/YTShortsCaseStudy.astro';
 import SideBar from '../layouts/HomeView.astro';
+import TopNavBar from '../layouts/topNavBar.astro';
+
 
 import '../styles/global.css';
 import '../styles/pageview.css';
@@ -19,7 +21,7 @@ import '../styles/pageview.css';
         <ViewTransitions />
         <style>
             .sidebar-container{
-            padding: 3vh;
+				padding: 1.5rem;
             border-right: solid lightgray .5px;
 
             }
@@ -37,6 +39,7 @@ import '../styles/pageview.css';
                 <SideBar />
             </div>
             <div class="youtube-container">
+                <TopNavBar />
                 <YouTubeCaseStudy />
             </div>
         </div>

@@ -7,6 +7,7 @@ import kayimage from '../assets/homeimages/image 78.png';
 import error404img from '../assets/homeimages/error404.png';
 import error404imgborder from '../assets/homeimages/error404border.png';
 
+import tvimg from '../assets/tv.png';
 import brightlineVideo from '../assets/Brightline/Video/assignandpreview.mp4?url';
 import youtubeVideo from '../assets/YouTube/Video/PrebrowsingForm.mp4?url';
 import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url';
@@ -29,6 +30,8 @@ import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url'
 } */
 
 
+
+
 .rightfull-container{
     padding: 3vh;
     /* background: linear-gradient(-45deg, #fff, #b6eddc, #f5ebe0, #f6f1ed);
@@ -41,6 +44,8 @@ import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url'
     display: flex;
     flex-direction: column;
     gap: .5px;
+    border: solid 1px gray;
+    padding: .25rem;
 }
 
 .colorSquare-container p{
@@ -48,14 +53,14 @@ import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url'
 }
 .twoColumnContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
     width: 100%;
 }
 .colorSquresColumn{
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    justify-content: space-between;    
 }
 
 
@@ -132,6 +137,7 @@ background-color: #D8DEE4;
 
 .containerImg{display: none;}
 
+
 .imgLookAtMe{
     display: block;
 }
@@ -139,31 +145,101 @@ background-color: #D8DEE4;
 a{
     text-decoration: none;
 }
+
+.circles{
+    display: inline-flex;
+padding: var(--Number, 0rem);
+flex-direction: column;
+align-items: flex-start;
+gap: -1.9375rem;
+
+}
+
+.circle1{
+    width: 2.75rem;
+height: 2.1875rem;
+flex-shrink: 0;
+border-radius: 2.9375rem;
+background: #FFB876;
+}
+.circle2{
+    width: 2.75rem;
+height: 2.1875rem;
+border-radius: 2.9375rem;
+background: #D59F4E;
+}
+
+.svgContainer{
+    
+}
+
+.svgButtons{
+    position: relative;
+}
+#unclickedSVG{
+
+}
+#clickedSVG{
+    display:none;
+}
+#unclickedSVG:hover #clickedSVG{
+    display:block;
+}
 </style>
 
 <div class="rightfull-container">
 <div class="twoColumnContainer">
     <div class="colorSquresColumn">
         <a href="/brightline"><div id="brightlineSquare-container" class="colorSquare-container">
-            <p>Brightline</p>
             <div id="brightlineSquare" class="colorSquare"></div>
+            <p>Brightline</p>
         </div></a>
         <a href="/microsoft"><div id="MicrsoftSquare-container" class="colorSquare-container">
-            <p>Microsoft</p>
             <div id="msSquare" class="colorSquare"></div>
+            <p>Microsoft</p>
         </div></a>
         <a href="/youtube"><div id="YTShortsSquare-container" class="colorSquare-container">
-            <p>YouTube Shorts</p>
+
             <div id="ytSquare" class="colorSquare"></div>
+            <p>YouTube </p>
         </div></a>
         <div id="HandshakeSquare-container" class="colorSquare-container">
-            <p>Handshake</p>
             <div id="HandshakeSquare" class="colorSquare"></div>
+            <p>Handshake</p>
+
         </div>
         <div id="spotifySquare-container" class="colorSquare-container">
-            <p>Spotify</p>
             <div id="spotifySquare" class="colorSquare"></div>
+            <p>Spotify</p>
+
         </div>
+    </div>
+    <div class="duolingo">
+        <div class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="svgContainer">
+            <svg class="svgButtons" id="unclickedSVG" xmlns="http://www.w3.org/2000/svg" width="45" height="41" viewBox="0 0 45 41" fill="none">
+            <g clip-path="url(#clip0_2392_2068)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 41C34.9265 41 45 32.9412 45 23V18C45 17.4478 44.5522 17 44 17H43.7197C40.6311 10.0088 32.2966 5 22.5 5C12.7034 5 4.3689 10.0088 1.28027 17H1C0.447754 17 0 17.4478 0 18V23C0 32.9412 10.0735 41 22.5 41Z" fill="#D59F4E"/>
+              <path d="M22.5 36C34.9264 36 45 27.9411 45 18C45 8.05887 34.9264 0 22.5 0C10.0736 0 0 8.05887 0 18C0 27.9411 10.0736 36 22.5 36Z" fill="#FFB876"/>
+                <text>1</text>
+            </g>
+            <defs>
+              <clipPath id="clip0_2392_2068">
+                <rect width="45" height="41" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg class="svgButtons" id="clickedSVG" xmlns="http://www.w3.org/2000/svg" width="45" height="41" viewBox="0 0 45 41" fill="none">
+            <path d="M22.5 41C34.9264 41 45 32.9411 45 23C45 13.0589 34.9264 5 22.5 5C10.0736 5 0 13.0589 0 23C0 32.9411 10.0736 41 22.5 41Z" fill="#FFB876"/>
+          </svg>
+          </div>
+
     </div>
     <div class="bigImageContainer">
         <img class= 'containerImg fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>

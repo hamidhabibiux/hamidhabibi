@@ -2,9 +2,11 @@
 import { ViewTransitions } from 'astro:transitions';
 import BrightlineCaseStudy from '../layouts/BrightlineCaseStudy.astro';
 import SideBar from '../layouts/HomeView.astro';
+import topNav from '../layouts/topNavBar.astro';
 
 import '../styles/global.css';
 import '../styles/pageview.css';
+import TopNavBar from '../layouts/topNavBar.astro';
 
 ---
 
@@ -22,7 +24,7 @@ import '../styles/pageview.css';
         <ViewTransitions />
         <style>
             .sidebar-container{
-            padding: 3vh;
+				padding: 1.5rem;
             border-right: solid lightgray .5px;
             }
             .brightline-container{
@@ -39,6 +41,7 @@ import '../styles/pageview.css';
                 <SideBar />
             </div>
             <div class="brightline-container">
+                <TopNavBar />
                 <BrightlineCaseStudy />
             </div>
         </div>
