@@ -286,9 +286,17 @@ casestudyItems.forEach(item => {
     const hoveredIndex = Array.from(casestudyItems).indexOf(item);
     if (hoveredIndex !== -1 && hoveredIndex < posterImages.length){
         
+        //this is for changing the poster shown
+        posterImages[hoveredIndex].classList.add('imgLookAtMe');
         
         //smallRectangleItems[hoveredIndex].style.width = '20px'; Could potentially use this if i want the rectangles to change length on hover
 
+        //this is for changing the rectangles styles
+        smallRectangleItems.forEach((rectangle, rectIndex) => {
+                if (rectIndex !== hoveredIndex) {
+                    rectangle.classList.add('deselectedSquare'); // Change to desired color
+                }
+            });
         smallRectangleText.forEach((named, namedIndex) => {
                 if (namedIndex !== hoveredIndex) {
                     named.classList.add('deselectedText');
