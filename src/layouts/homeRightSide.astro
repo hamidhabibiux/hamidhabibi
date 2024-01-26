@@ -7,7 +7,6 @@ import kayimage from '../assets/homeimages/image 78.png';
 import error404img from '../assets/homeimages/error404.png';
 import error404imgborder from '../assets/homeimages/error404border.png';
 
-import tvimg from '../assets/tv.png';
 import brightlineVideo from '../assets/Brightline/Video/assignandpreview.mp4?url';
 import youtubeVideo from '../assets/YouTube/Video/PrebrowsingForm.mp4?url';
 import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url';
@@ -30,8 +29,6 @@ import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url'
 } */
 
 
-
-
 .rightfull-container{
     padding: 3vh;
     /* background: linear-gradient(-45deg, #fff, #b6eddc, #f5ebe0, #f6f1ed);
@@ -44,8 +41,6 @@ import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url'
     display: flex;
     flex-direction: column;
     gap: .5px;
-    border: solid 1px gray;
-    padding: .25rem;
 }
 
 .colorSquare-container p{
@@ -53,23 +48,23 @@ import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url'
 }
 .twoColumnContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 24px;
     width: 100%;
 }
 .colorSquresColumn{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;    
+    flex-direction: column;
+    gap: 16px;
 }
 
 
-/* .fullSizeImage{
+.fullSizeImage{
     max-width: 100%;
     width: 100%;
     height:auto;
     border-radius: 8px;
-} */
+}
 
 
 
@@ -145,572 +140,39 @@ background-color: #D8DEE4;
 a{
     text-decoration: none;
 }
-
-.circles{
-    display: inline-flex;
-padding: var(--Number, 0rem);
-flex-direction: column;
-align-items: flex-start;
-gap: -1.9375rem;
-
-}
-
-.circle1{
-    width: 2.75rem;
-height: 2.1875rem;
-flex-shrink: 0;
-border-radius: 2.9375rem;
-background: #FFB876;
-}
-.circle2{
-    width: 2.75rem;
-height: 2.1875rem;
-border-radius: 2.9375rem;
-background: #D59F4E;
-}
-
-.svgContainer{
-    
-}
-
-.svgButtons{
-    position: relative;
-}
-#unclickedSVG{
-
-}
-#clickedSVG{
-    display:none;
-}
-#unclickedSVG:hover #clickedSVG{
-    display:block;
-}
-
-
-
-/* NEW STYLE TAGS */
-h1 {
-    font-family: 'Inter Var';
-    font-size: 36px;
-    font-weight: bold;
-    color: #5B483E;
-    margin-block: 0;
-    line-height: 48px;
-}
-p {
-    font-family: 'Inter Var';
-    font-size: 14px;
-    color: #515155;
-}
-
-.fullContainerRightSide{
-    scroll-snap-type: y mandatory;
-}
-
-.rightSection{
-    height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0rem 4rem;
-}
-
-.fullSizeImage{
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-}
-
-.date{
-    color: #706f6f;
-}
-
-
-
-
-.casestudySectionDate{
-    flex-direction: column;
-    display: flex;
-}
-.casestudySectionTitle{
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-}
-
-.hvr-grow-rotate {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
-  -webkit-transform: scale(1.1) rotate(4deg);
-  transform: scale(1.1) rotate(4deg);
-}
-.hvr-grow-rotate-backwards {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow-rotate-backwards:hover, .hvr-grow-rotate-backwards:focus, .hvr-grow-rotat-backwards:active {
-  -webkit-transform: scale(1.1) rotate(-4deg);
-  transform: scale(1.1) rotate(-4deg);
-}
-
-/* Hero */
-
- @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} 
-
-
-
-#rightHero{
-    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
-    background: linear-gradient(-45deg, #fff, #b6eddc, #f5ebe0, #f6f1ed);
-    background: linear-gradient(
-  45deg,
-  hsl(240deg 42% 93%) 0%,
-  hsl(342deg 63% 94%) 13%,
-  hsl(24deg 77% 94%) 25%,
-  hsl(44deg 51% 94%) 37%,
-  hsl(24deg 67% 95%) 50%,
-  hsl(7deg 49% 96%) 63%,
-  hsl(0deg 36% 96%) 75%,
-  hsl(0deg 34% 95%) 87%,
-  hsl(0deg 33% 94%) 100%
-);
-background-image: linear-gradient(
-  45deg,
-  hsl(240deg 7% 26%) 0%,
-  hsl(266deg 8% 27%) 6%,
-  hsl(296deg 8% 27%) 11%,
-  hsl(323deg 11% 28%) 17%,
-  hsl(339deg 14% 29%) 22%,
-  hsl(352deg 16% 30%) 28%,
-  hsl(4deg 18% 30%) 33%,
-  hsl(14deg 22% 29%) 39%,
-  hsl(23deg 25% 29%) 44%,
-  hsl(32deg 26% 28%) 50%,
-  hsl(29deg 25% 27%) 56%,
-  hsl(25deg 24% 25%) 61%,
-  hsl(22deg 22% 24%) 67%,
-  hsl(18deg 20% 23%) 72%,
-  hsl(15deg 18% 21%) 78%,
-  hsl(11deg 15% 20%) 83%,
-  hsl(8deg 12% 18%) 89%,
-  hsl(4deg 9% 16%) 94%,
-  hsl(0deg 5% 15%) 100%
-);
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    
-}
-#rightHero h1{
-    color:whitesmoke;
-}
-#heroName{
-    display: flex;
-    flex-direction: column;
-}
-
-html{
-    scroll-snap-type: y mandatory;
-}
-
-/* Brightline */
-h2{
-    font-size: 2.25rem;
-    color: #5B483E;
-    font-family: 'Inter Var';
-    font-weight: 700; /*originally 580 */
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-h3{
-    font-size: 1.75rem;
-    font-family: 'Inter Var';
-    font-style: normal;
-    font-weight: 580;
-    color: #515155;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-h4{
-    font-family: 'Inter Var';
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 580;
-    color: #515155;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-.casestudySectionText{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width:100%;
-}
-
-#brightlineIMG{
-    background-color:#FFC890;
-}
-
-.gifContainer{
-    background: #FFC890;
-    border-radius: 10px;
-    padding: 2rem;
-}
-
-#rightBrightline{
-
-padding: 0rem 4rem;
-background-image: linear-gradient(
-  45deg,
-  hsl(15deg 50% 98%) 0%,
-  hsl(8deg 75% 99%) 5%,
-  hsl(359deg 100% 99%) 11%,
-  hsl(347deg 100% 99%) 16%,
-  hsl(334deg 100% 99%) 21%,
-  hsl(320deg 100% 98%) 26%,
-  hsl(294deg 85% 98%) 32%,
-  hsl(313deg 99% 98%) 37%,
-  hsl(333deg 100% 98%) 42%,
-  hsl(353deg 100% 98%) 47%,
-  hsl(11deg 100% 98%) 53%,
-  hsl(21deg 100% 98%) 58%,
-  hsl(30deg 85% 97%) 63%,
-  hsl(33deg 74% 97%) 68%,
-  hsl(22deg 100% 98%) 74%,
-  hsl(12deg 100% 98%) 79%,
-  hsl(356deg 100% 99%) 84%,
-  hsl(337deg 100% 99%) 89%,
-  hsl(313deg 79% 99%) 95%,
-  hsl(270deg 100% 100%) 100%
-);
-background-size: 400% 400%;
-
-animation: gradient 15s ease infinite;
-
-
-}
-
-#rightMicrosoft{
-    background-image: linear-gradient(
-  45deg,
-  hsl(210deg 50% 98%) 0%,
-  hsl(216deg 69% 98%) 5%,
-  hsl(223deg 87% 99%) 11%,
-  hsl(232deg 100% 99%) 16%,
-  hsl(247deg 100% 99%) 21%,
-  hsl(264deg 100% 99%) 26%,
-  hsl(280deg 100% 98%) 32%,
-  hsl(280deg 100% 98%) 37%,
-  hsl(272deg 100% 98%) 42%,
-  hsl(265deg 98% 99%) 47%,
-  hsl(258deg 94% 99%) 53%,
-  hsl(251deg 88% 98%) 58%,
-  hsl(244deg 80% 98%) 63%,
-  hsl(252deg 70% 98%) 68%,
-  hsl(292deg 49% 98%) 74%,
-  hsl(330deg 77% 99%) 79%,
-  hsl(350deg 100% 99%) 84%,
-  hsl(7deg 100% 99%) 89%,
-  hsl(20deg 100% 99%) 95%,
-  hsl(30deg 100% 100%) 100%
-);
-background-size: 400% 400%;
-
-animation: gradient 15s ease infinite;
-
-}
-
-#rightHandshake{
-    background-image: linear-gradient(
-  45deg,
-  hsl(135deg 50% 98%) 0%,
-  hsl(143deg 58% 98%) 5%,
-  hsl(150deg 67% 98%) 11%,
-  hsl(156deg 75% 98%) 16%,
-  hsl(162deg 83% 98%) 21%,
-  hsl(167deg 91% 98%) 26%,
-  hsl(171deg 98% 98%) 32%,
-  hsl(168deg 100% 98%) 37%,
-  hsl(160deg 98% 98%) 42%,
-  hsl(150deg 95% 99%) 47%,
-  hsl(138deg 90% 99%) 53%,
-  hsl(121deg 82% 99%) 58%,
-  hsl(101deg 78% 99%) 63%,
-  hsl(90deg 75% 98%) 68%,
-  hsl(90deg 77% 99%) 74%,
-  hsl(90deg 78% 99%) 79%,
-  hsl(90deg 80% 99%) 84%,
-  hsl(90deg 84% 99%) 89%,
-  hsl(90deg 89% 99%) 95%,
-  hsl(90deg 100% 100%) 100%
-);
-background-size: 400% 400%;
-
-animation: gradient 15s ease infinite;
-}
-
-#rightYoutube{
-    background-image: linear-gradient(
-  45deg,
-  hsl(0deg 50% 98%) 0%,
-  hsl(0deg 58% 98%) 5%,
-  hsl(0deg 66% 98%) 11%,
-  hsl(0deg 74% 98%) 16%,
-  hsl(0deg 82% 98%) 21%,
-  hsl(0deg 90% 98%) 26%,
-  hsl(0deg 97% 98%) 32%,
-  hsl(355deg 100% 98%) 37%,
-  hsl(347deg 100% 98%) 42%,
-  hsl(338deg 95% 98%) 47%,
-  hsl(328deg 84% 98%) 53%,
-  hsl(314deg 69% 98%) 58%,
-  hsl(294deg 62% 98%) 63%,
-  hsl(285deg 67% 98%) 68%,
-  hsl(302deg 51% 98%) 74%,
-  hsl(316deg 57% 98%) 79%,
-  hsl(327deg 61% 97%) 84%,
-  hsl(335deg 64% 97%) 89%,
-  hsl(343deg 65% 97%) 95%,
-  hsl(349deg 65% 97%) 100%
-);
-background-size: 400% 400%;
-
-animation: gradient 15s ease infinite;
-}
-
-#rightExplorations{
-    background-image: linear-gradient(
-  45deg,
-  hsl(0deg 0% 11%) 0%,
-  hsl(1deg 4% 12%) 5%,
-  hsl(1deg 7% 13%) 11%,
-  hsl(1deg 10% 14%) 16%,
-  hsl(0deg 13% 15%) 21%,
-  hsl(0deg 15% 16%) 26%,
-  hsl(0deg 17% 17%) 32%,
-  hsl(354deg 19% 17%) 37%,
-  hsl(345deg 21% 17%) 42%,
-  hsl(334deg 21% 17%) 47%,
-  hsl(322deg 21% 17%) 53%,
-  hsl(304deg 19% 17%) 58%,
-  hsl(281deg 20% 17%) 63%,
-  hsl(273deg 21% 18%) 68%,
-  hsl(290deg 19% 19%) 74%,
-  hsl(308deg 18% 20%) 79%,
-  hsl(322deg 19% 22%) 84%,
-  hsl(332deg 19% 24%) 89%,
-  hsl(340deg 19% 25%) 95%,
-  hsl(348deg 18% 27%) 100%
-);
-background-size: 400% 400%;
-
-animation: gradient 15s ease infinite;
-}
-
-.buttonViewWork{
-    background-color:#5B483E;
-    display: flex;
-padding: 0.5rem;
-justify-content: center;
-align-items: center;
-border-radius: .25rem;
-
-}
-.viewWork{
-    color: var(--gray-white, #FFF);
-text-align: center;
-/* title medium */
-font-family: Inter Var;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 500;
-line-height: 1.25rem; /* 142.857% */
-letter-spacing: -0.00625rem;
-}
-
-/* microsoft and youtube */
-
-#msImage{
-    max-width: auto;
-    width: auto;
-    height: 50vh;
-    padding: 2vw 8vw;
-    background-color: #90CAFF;
-
-}
-.testingMsImages{
-    max-width: auto;
-    width: auto;
-    height: 50vh;
-}
-
-#ytImage{
-    max-width: auto;
-    width: auto;
-    height: 50vh;
-    padding: 2vw 8vw;
-    background-color: #FF8F8F;
-}
-.imageContainer{
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    background:#90CAFF; /*#CAD7E2*/
-    border-radius: 10px;
-    text-align: center;
-    width: -webkit-fill-available;
-}
-
 </style>
 
-<div class="fullContainerRightSide">
-    <section id="rightHero" class="rightSection">
-        <div></div>
-        <div id="heroName">
-            <h1>Hamid Habibi,</h1>
-            <div>
-            <h1 id="changeableText">product designer aiming to minimize suffering for the communities he serves</h1>
-            </div>
-            <br />
-            <br />
-            <br />
-            <h1>He has previously worked with Brightline, Microsoft, Handshake, and YouTube </h1>
+<div class="rightfull-container">
+<div class="twoColumnContainer">
+    <div class="colorSquresColumn">
+        <a href="/brightline"><div id="brightlineSquare-container" class="colorSquare-container">
+            <p>Brightline</p>
+            <div id="brightlineSquare" class="colorSquare"></div>
+        </div></a>
+        <a href="/microsoft"><div id="MicrsoftSquare-container" class="colorSquare-container">
+            <p>Microsoft</p>
+            <div id="msSquare" class="colorSquare"></div>
+        </div></a>
+        <a href="/youtube"><div id="YTShortsSquare-container" class="colorSquare-container">
+            <p>YouTube Shorts</p>
+            <div id="ytSquare" class="colorSquare"></div>
+        </div></a>
+        <div id="HandshakeSquare-container" class="colorSquare-container">
+            <p>Handshake</p>
+            <div id="HandshakeSquare" class="colorSquare"></div>
         </div>
-        <p style="color: white;">Scroll to check out my work!</p>
-    </section>
-    <section id="rightBrightline" class="rightSection">
-        <div class="casestudySectionText">
-            <div class="casestudySectionDate">
-            <p class="date">2022 (1/5)</p>
-            <div class="casestudySectionTitle">
-                <h1>Brightline</h1>
-                <!-- <h2>Brightline Provider Experience</h2> -->
-                <h4 style="color: #B8B8B8;">Enabling behavioral therapy through digital health tools</h4>
-            </div>
-            </div>
-            <a href="/brightline"><div class="gifContainer hvr-grow-rotate"> 
-                    <img id="brightlineIMG" class= 'fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
-               
-                </div> </a>
-
-
+        <div id="spotifySquare-container" class="colorSquare-container">
+            <p>Spotify</p>
+            <div id="spotifySquare" class="colorSquare"></div>
         </div>
-    </section>
-    <section id="rightMicrosoft" class="rightSection">
-        <div class="casestudySectionText">
-            <div class="casestudySectionDate">
-            <p class="date">2022 (2/5)</p>
-            <div class="casestudySectionTitle">
-                <h1>Microsoft</h1>
-                <!-- <h2>Brightline Provider Experience</h2> -->
-                <h4 style="color: #B8B8B8;">An all-in-one solution for B2B sellers to connect and close sales</h4>
-            </div>
-            </div>
-            <a href="/microsoft"><div class="imageContainer hvr-grow-rotate-backwards">
-                    <img id="msImage" class='testingMSImages' src={redimage.src} width={redimage.width} height={redimage.height}>
-                
-                </div></a>
-    </section>
-    <section id="rightHandshake" class="rightSection">
-        <div class="casestudySectionText">
-            <div class="casestudySectionDate">
-            <p class="date">2022 (3/5)</p>
-            <div class="casestudySectionTitle">
-                <h1>Handshake</h1>
-                <!-- <h2>Brightline Provider Experience</h2> -->
-                <h4 style="color: #B8B8B8;">Surfacing skill development courses to aid college students</h4>
-            </div>
-            </div>
+    </div>
+    <div class="bigImageContainer">
+        <img class= 'containerImg fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
+        <img id="msImage" class= 'containerImg fullSizeImage' src={redimage.src} width={redimage.width} height={redimage.height}>
+        <img id="ytImage" class= 'containerImg fullSizeImage' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
+        <img class= 'containerImg fullSizeImage' src={error404img.src} width={error404img.width} height={error404img.height}>
+        <img class= 'containerImg fullSizeImage' src={error404img.src} width={error404img.width} height={error404img.height}>
 
-                    <img class= 'fullSizeImage' style="width: 75%; height: auto; margin:auto;" src={error404imgborder.src} width={error404imgborder.width} height={error404imgborder.height}>
-               
-                
-
-
-        </div>
-    </section>
-    <section id="rightYoutube" class="rightSection">
-        <div class="casestudySectionText">
-            <div class="casestudySectionDate">
-            <p class="date">2023 (4/5)</p>
-            <div class="casestudySectionTitle">
-                <h1>YouTube</h1>
-                <!-- <h2>Brightline Provider Experience</h2> -->
-                <h4 style="color: #B8B8B8;">Defining the exploration and search journey within YouTube Shorts</h4>
-            </div>
-            </div>
-            <a href="/youtube"><div class="imageContainer hvr-grow-rotate-backwards" style="background-color:#FF8F8F;"> 
-                    <img style="background-color:#FF8F8F;" id="msImage" class='testingMSImages' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
-                
-                </div></a>
-    </section>
-    <section id="rightExplorations" class="rightSection">
-        <div class="casestudySectionText">
-            <div class="casestudySectionDate">
-            <p class="date" style="color: white;">Ongoing (5/5)</p>
-            <div class="casestudySectionTitle">
-                <h1 style="color: white;">Design Explorations</h1>
-                <!-- <h2>Brightline Provider Experience</h2> -->
-                <h4 style="color: white;">A collection of some designs I made and explanations for why I made them xD</h4>
-            </div>
-            </div>
-
-                    <img class= 'fullSizeImage' style="width: 75%; height: auto; margin:auto; background-color: white; border-radius:0px; opacity: 90%;" src={error404imgborder.src} width={error404imgborder.width} height={error404imgborder.height}>
-               
-        </div>
-    </section>
+    </div>
 </div>
-
-<!-- <script>
-    document.addEventListener('astro:page-load', () => {
-    var words = ["Interaction Designer", "Mario Karter", "Anti-Disciplinary"]
-    const textCycling = document.getElementById('changeableText');
-    let currentIndex = 0;
-    function cycleText(){
-        textCycling.textContent = words[currentIndex];
-        currentIndex = (currentIndex + 1) % words.length;
-    }
-
-
-    cycleText();
-
-    setInterval(cycleText, 5000);
-    });
-    </script> -->
+</div>
