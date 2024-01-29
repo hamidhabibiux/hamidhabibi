@@ -272,165 +272,70 @@ span.casestudyDesc-mobile{
 </style>
 
 <script>
-document.addEventListener('astro:page-load', () => {   
-// Get all casestudyItem elements
-const casestudyItems = document.querySelectorAll('.casestudyItem');
-const smallRectangleItems = document.querySelectorAll('.colorSquare');
-const posterImages = document.querySelectorAll('.bigImageContainer img');
-const smallRectangleText = document.querySelectorAll('.colorSquare-container p');
-const colorSquareContainers = document.querySelectorAll('.colorSquare-container');
-//new code
-const casestudyItemsArray = Array.from(casestudyItems);
-
-
-//The following lines of code affect hovers that happen on the left side
-
-// Loop through each casestudyItem
-casestudyItems.forEach(item => {
-  // Add event listener for mouseover (hover)
-  item.addEventListener('mouseover', () => {
-    //start new code
-    const hoveredIndex = Array.from(casestudyItems).indexOf(item);
-    if (hoveredIndex !== -1 && hoveredIndex < posterImages.length){
-        
-        
-        //smallRectangleItems[hoveredIndex].style.width = '20px'; Could potentially use this if i want the rectangles to change length on hover
-
-        smallRectangleText.forEach((named, namedIndex) => {
-                if (namedIndex !== hoveredIndex) {
-                    named.classList.add('deselectedText');
-                }
-        })
-    }
-    //end new code
-
-    // Loop through all items again and change text color of spans except the one being hovered
-    casestudyItems.forEach(otherItem => {
-      if (otherItem !== item && otherItem instanceof HTMLElement) {
-        const spans = otherItem.querySelectorAll('span');
-        spans.forEach(span => {
-          span.style.color = '#C0B5AF'; // Change this to your desired text color
-          // Change any other styles as needed
-        });
-      }
-    });
-  });
-
-  // Add event listener for mouseout (when the mouse leaves the element)
-  item.addEventListener('mouseout', () => {
-    // Loop through all items again and reset text color of spans back to its original state when not hovered
-    //start new code
-    const hoveredIndex = Array.from(casestudyItems).indexOf(item);
-    if (hoveredIndex !== -1 && hoveredIndex < posterImages.length){
-        
-        //this is for changing the poster shown
-        posterImages[hoveredIndex].classList.remove('imgLookAtMe');
-
-        //this is for changing the rectangles styles
-        smallRectangleItems.forEach((rectangle, rectIndex) => {
-                if (rectIndex !== hoveredIndex) {
-                    rectangle.classList.remove('deselectedSquare'); // Change to desired color
-                }
-            });
-            smallRectangleText.forEach((named, namedIndex) => {
-                if (namedIndex !== hoveredIndex) {
-                    named.classList.remove('deselectedText');
-                }
-        })
-    }
-    //end new code
-    casestudyItems.forEach(otherItem => {
-      if (otherItem !== item && otherItem instanceof HTMLElement) {
-        const spans = otherItem.querySelectorAll('span');
-        spans.forEach(span => {
-          span.style.color = ''; // Reset to default or remove this line if not needed
-          // Reset any other styles as needed
-        });
-      }
-    });
-  });
-});
-
-
-//The following lines will affect right side hovers
-
-colorSquareContainers.forEach(item => {
-  // Add event listener for mouseover (hover)
-  item.addEventListener('mouseover', () => {
-    //start new code
-    const hoveredIndex = Array.from(colorSquareContainers).indexOf(item);
-    if (hoveredIndex !== -1 && hoveredIndex < posterImages.length){
-        
-        //this is for changing the poster shown
-        posterImages[hoveredIndex].classList.add('imgLookAtMe');
-
-        //this is for changing the rectangles styles
-        smallRectangleItems.forEach((rectangle, rectIndex) => {
-                if (rectIndex !== hoveredIndex) {
-                    rectangle.classList.add('deselectedSquare'); // Change to desired color
-                }
-            });
-        smallRectangleText.forEach((named, namedIndex) => {
-                if (namedIndex !== hoveredIndex) {
-                    named.classList.add('deselectedText');
-                }
-        })
-    }
-    //end new code
-
-    // Loop through all items again and change text color of spans except the one being hovered
-    casestudyItems.forEach((item, itemIndex) => {
-        if (itemIndex !== hoveredIndex) {
-            const spans = item.querySelectorAll('span');
+    document.addEventListener('astro:page-load', () => {   
+    // Get all casestudyItem elements
+    const casestudyItems = document.querySelectorAll('.casestudyItem');
+    const smallRectangleItems = document.querySelectorAll('.colorSquare');
+    const posterImages = document.querySelectorAll('.bigImageContainer img');
+    const smallRectangleText = document.querySelectorAll('.colorSquare-container p');
+    const colorSquareContainers = document.querySelectorAll('.colorSquare-container');
+    //new code
+    const casestudyItemsArray = Array.from(casestudyItems);
+    
+    
+    //The following lines of code affect hovers that happen on the left side
+    
+    // Loop through each casestudyItem
+    casestudyItems.forEach(item => {
+      // Add event listener for mouseover (hover)
+      item.addEventListener('mouseover', () => {
+        //start new code
+        const hoveredIndex = Array.from(casestudyItems).indexOf(item);
+    
+        // Loop through all items again and change text color of spans except the one being hovered
+        casestudyItems.forEach(otherItem => {
+          if (otherItem !== item && otherItem instanceof HTMLElement) {
+            const spans = otherItem.querySelectorAll('span');
             spans.forEach(span => {
-                span.style.color = '#C0B5AF';
+              span.style.color = '#C0B5AF'; // Change this to your desired text color
+              // Change any other styles as needed
             });
-        };
+          }
+        });
+      });
+    
+      // Add event listener for mouseout (when the mouse leaves the element)
+      item.addEventListener('mouseout', () => {
+        // Loop through all items again and reset text color of spans back to its original state when not hovered
+        //start new code
+        const hoveredIndex = Array.from(casestudyItems).indexOf(item);
+        if (hoveredIndex !== -1 && hoveredIndex < posterImages.length){
+            
+    
+                smallRectangleText.forEach((named, namedIndex) => {
+                    if (namedIndex !== hoveredIndex) {
+                        named.classList.remove('deselectedText');
+                    }
+            })
+        }
+        //end new code
+        casestudyItems.forEach(otherItem => {
+          if (otherItem !== item && otherItem instanceof HTMLElement) {
+            const spans = otherItem.querySelectorAll('span');
+            spans.forEach(span => {
+              span.style.color = ''; // Reset to default or remove this line if not needed
+              // Reset any other styles as needed
+            });
+          }
+        });
+      });
     });
     
-
-  });
-
-  // Add event listener for mouseout (when the mouse leaves the element)
-  item.addEventListener('mouseout', () => {
-    // Loop through all items again and reset text color of spans back to its original state when not hovered
-    //start new code
-    const hoveredIndex = Array.from(colorSquareContainers).indexOf(item);
-    if (hoveredIndex !== -1 && hoveredIndex < posterImages.length){
-        
-        //this is for changing the poster shown
-        posterImages[hoveredIndex].classList.remove('imgLookAtMe');
-
-        //this is for changing the rectangles styles
-        smallRectangleItems.forEach((rectangle, rectIndex) => {
-                if (rectIndex !== hoveredIndex) {
-                    rectangle.classList.remove('deselectedSquare'); // Change to desired color
-                }
-            });
-            smallRectangleText.forEach((named, namedIndex) => {
-                if (namedIndex !== hoveredIndex) {
-                    named.classList.remove('deselectedText');
-                };
-        });
-    };
-    //end new code
-    casestudyItems.forEach((item, itemIndex) => {
-        if (itemIndex !== hoveredIndex) {
-            const spans = item.querySelectorAll('span');
-            spans.forEach(span => {
-                span.style.color = '';
-            });
-        };
+    
+    
     });
-  });
-});
-
-
-
-
-});
-
-</script>
+    
+    </script>
 
 
 <div class="indexContainer">
