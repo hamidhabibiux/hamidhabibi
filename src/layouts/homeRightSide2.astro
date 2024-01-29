@@ -605,6 +605,14 @@ letter-spacing: -0.00625rem;
 
 
 
+@font-face{
+    font-family: 'ACFont';
+    src: url('acfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* video */
 
 .fullSizeVideo{
@@ -619,11 +627,71 @@ letter-spacing: -0.00625rem;
     height: 50vh;
 }
 
+.dialogContainer{
+    background-image: url(/animalcrossing.svg);
+    width: 771px;
+    height: 242px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 36px;
+}
+
+.dialogContainer p{
+    position: absolute;
+    margin-left:80px;
+    margin-right: 80px;
+    margin-top:80px;
+    font-family: 'ACFont', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    
+}
+.containersContainer{
+    display: flex;
+    position: fixed;
+    bottom: 36px;
+    justify-content: center;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    z-index: 1;
+    pointer-events: none;
+
+}
 
 </style>
 
 <div class="fullContainerRightSide">
+    <div class="containersContainer">
+    <div class="dialogContainer">
+        <!-- <svg id="Layer_5" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 998 493.99">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fffae5;
+                }
+          
+                .cls-2 {
+                  fill: #71ab8c;
+                }
+          
+                .cls-3 {
+                  fill: #3d3628;
+                  font-family: RodinProN-DB-83pv-RKSJ-H, 'FOT-Rodin ProN';
+                  font-size: 24px;
+                  letter-spacing: .02em;
+                }
+              </style>
+            </defs>
+            <path class="cls-1" d="m887.5,345.16v-.14c19.25-18.84,22-40.68,22-51.78,0-16.54-12.76-46.53-72-58-69.34-13.43-205.77-12-318.5-12-100,0-218.83-1.88-286.5,9-73.79,11.86-92,37.27-92,56,0,13.32.19,42.46,27.46,64.74,2.33,4.57,3.19,10.31.54,17.26-2.08,5.46-2.87,10.99-2.91,16.18-.14,2.64-.09,4.84-.09,6.32,0,7.94,8.03,25.14,40,31.5,62.54,12.44,188.97,11,319,11,14,0,256.8,1.09,320-11,33.94-6.49,38-23.3,38-31.5,0-.92-.02-2.3-.11-4.03.07-4.04-.31-8.3-1.38-12.6-.69-4.02-1.69-8.4-3.13-12.81-.13-6.95,3.35-12.28,7.26-16.06.41-.37.81-.73,1.2-1.1.39-.34.77-.66,1.16-.97Z"/>
+            <path class="cls-2" d="m334.5,217.24c.67,5.73.02,13.43-14,19-15.31,6.08-45.17,5.42-70.14,8.34-25.83,3.02-59.86,9.66-74.86,5.66-13.67-3.65-13.36-13.48-14-19s3.23-14.47,17-20c15.32-6.15,41.6-7.13,66.79-10.07,24.95-2.92,57.91-6.31,74.21-3.93,14.95,2.19,14.33,14.27,15,20Z"/>
+            <text class="cls-3" transform="translate(207.63 237.25) rotate(-6.92)"><tspan x="0" y="0">Hamid</tspan></text>
+          </svg> -->
+          <p class="dialogText">Hey there! I guess that application really worked, huh?</p>
+    </div>
+</div>
     <section id="rightHero" class="rightSection">
+
         <div></div>
         <div id="heroName">
             <h1>Hamid Habibi,</h1>
