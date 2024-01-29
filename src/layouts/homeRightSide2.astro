@@ -12,6 +12,11 @@ import brightlineVideo from '../assets/Brightline/Video/assignandpreview.mp4?url
 import youtubeVideo from '../assets/YouTube/Video/PrebrowsingForm.mp4?url';
 import microsoftVideo from '../assets/Microsoft/Video/Final Prospecting.mp4?url';
 
+import assignpreviewVID from '../assets/Brightline/Video/assignandpreviewv2.mp4?url';
+import prospectingVID from '../assets/Microsoft/Video/Final Prospectingv2.mp4?url';
+import preBrowsingFormVID from '../assets/YouTube/Video/PrebrowsingForm.mp4?url';
+
+
 ---
 
 <style>
@@ -598,6 +603,23 @@ letter-spacing: -0.00625rem;
     width: -webkit-fill-available;
 }
 
+
+
+/* video */
+
+.fullSizeVideo{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testingMSVideos{
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+}
+
+
 </style>
 
 <div class="fullContainerRightSide">
@@ -626,7 +648,7 @@ letter-spacing: -0.00625rem;
             </div>
             </div>
             <a href="/brightline"><div class="gifContainer hvr-grow-rotate"> 
-                    <img id="brightlineIMG" class= 'fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
+                <video id="theVideo" class="fullSizeVideo" autoplay loop muted="true" playsinline  src={assignpreviewVID}></video>
                
                 </div> </a>
 
@@ -644,7 +666,7 @@ letter-spacing: -0.00625rem;
             </div>
             </div>
             <a href="/microsoft"><div class="imageContainer hvr-grow-rotate-backwards">
-                    <img id="msImage" class='testingMSImages' src={redimage.src} width={redimage.width} height={redimage.height}>
+                <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={prospectingVID} type="video/mp4" /></video>
                 
                 </div></a>
     </section>
@@ -677,7 +699,7 @@ letter-spacing: -0.00625rem;
             </div>
             </div>
             <a href="/youtube"><div class="imageContainer hvr-grow-rotate-backwards" style="background-color:#FF8F8F;"> 
-                    <img style="background-color:#FF8F8F;" id="msImage" class='testingMSImages' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
+                <video id="theVideo" class="testingMSVideos" autoplay loop muted="true" playsinline ><source src={preBrowsingFormVID} type="video/mp4" /></video>
                 
                 </div></a>
     </section>
