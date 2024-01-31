@@ -131,10 +131,55 @@ justify-content: center;
 align-items: center;
 gap: 0.625rem;
 border-radius: 0.25rem;
+/* transition: 1s; */
 }
 
-.navButton:hover{
+/* .navButton:hover{
 background-color: rgba(33, 33, 33, 0.05);
+} */
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  /* background: #e1e1e1; */
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: #2098D1; */
+  background: rgba(33, 33, 33, 0.05);
+  border-radius: 0.25rem;
+
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  /* color: white; */
+  border-radius: 0.25rem;
+
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .myWorks{
@@ -347,8 +392,8 @@ span.casestudyDesc-mobile{
     <div class="theHeader">
         <a href="/"><h1 class="nameTitle">Hamid Habibi</h1></a>
         <div class="aboutResume">
-            <a href="http://tinyurl.com/hamidsresume" target="_blank"><p class="navButton" style="font-weight: 700;">Resume</p></a>
-            <a href="/about"><p class="navButton" style="font-weight:700;">About</p></a>
+            <a href="http://tinyurl.com/hamidsresume" target="_blank"><p class="navButton hvr-rectangle-out" style="font-weight: 700;">Resume</p></a>
+            <a href="/about"><p class="navButton hvr-rectangle-out" style="font-weight:700;">About</p></a>
         
         </div>
     </div>
