@@ -1,0 +1,51 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import BrightlineCaseStudy from '../layouts/BrightlineCaseStudy.astro';
+import SideBar from '../layouts/HomeView.astro';
+import topNav from '../layouts/topNavBar.astro';
+
+import '../styles/global.css';
+import '../styles/pageview.css';
+import TopNavBar from '../layouts/topNavBar.astro';
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Brightline</title>
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <ViewTransitions />
+        <style>
+            .sidebar-container{
+				padding: 1.5rem;
+            border-right: solid lightgray .5px;
+            }
+            .brightline-container{
+                /*padding: 3vh; */
+                background-color: #fff;
+                overflow-y: scroll;
+                border-left:.5px;
+                scroll-behavior: smooth;
+
+            }
+        </style>
+    </head>
+	<body>
+        <div class="full-container">
+            <div class="sidebar-container">
+                <SideBar />
+            </div>
+            <div class="brightline-container">
+                <TopNavBar />
+                <BrightlineCaseStudy />
+            </div>
+        </div>
+	</body>
+</html>
